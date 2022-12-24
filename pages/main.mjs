@@ -1,4 +1,4 @@
-import form from "./form.mjs";
+import form from "../modules/components/form.mjs";
 
 const container = document.querySelector(".container");
 
