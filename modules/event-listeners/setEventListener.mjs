@@ -4,4 +4,4 @@ const setEventListener = (targetName, eventName, eventHandler) => {
     .addEventListener(eventName, eventHandler);
 };
 
-export default setEventListener;
+export { setEventListener };

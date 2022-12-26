@@ -1,5 +1,5 @@
-import form from "../modules/components/form.mjs";
-import setEventListener from "../modules/setEventListener.mjs";
+import form from "../fragments/form.mjs";
+import { setEventListener } from "../modules/event-listeners/event-listeners.mjs";
 
 const container = document.querySelector(".container");
 

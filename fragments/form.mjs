@@ -1,6 +1,8 @@
-import createForm from "../createForm.mjs";
-import createInputField from "../createInputField.mjs";
-import createButton from "../createButton.mjs";
+import {
+  createForm,
+  createInputField,
+  createButton,
+} from "../modules/form/form-elements.mjs";
 
 const inputNumberField = createInputField(
   "Type a limit number",

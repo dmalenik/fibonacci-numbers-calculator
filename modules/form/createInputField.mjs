@@ -5,4 +5,4 @@ const createInputField = (labelName, inputName, type, id) => {
     </label>`;
 };
 
-export default createInputField;
+export { createInputField };
