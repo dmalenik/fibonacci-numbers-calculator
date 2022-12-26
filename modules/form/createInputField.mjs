@@ -1,8 +1,8 @@
 const createInputField = (labelName, inputName, type, id) => {
   return `<label for=${id}>\n
       ${labelName}:\n 
-      <input name=${inputName} type=${type} id=${id} />\n
-    </label>`;
+    </label>\n
+    <input name=${inputName} type=${type} id=${id} />`;
 };
 
 export { createInputField };
