@@ -11,12 +11,12 @@ const inputNumberField = createInputField(
   "limit-number"
 );
 const sendButton = createButton(
-  "fibonacci-limit-form",
+  "fibonacci-form",
   "button",
-  "fibonacci-limit-button",
+  "fibonacci-button",
   "Send"
 );
-const form = createForm("fibonacci-limit-form", "fibonacci-limit", "get", [
+const form = createForm("fibonacci-form", [
   inputNumberField,
   sendButton,
 ]).replace(/>,/gi, "> ");
