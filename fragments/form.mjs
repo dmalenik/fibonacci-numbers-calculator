@@ -16,9 +16,9 @@ const sendButton = createButton(
   "fibonacci-button",
   "Send"
 );
-const form = createForm("fibonacci-form", [
+const form = createForm("", "", "fibonacci-form", [
   inputNumberField,
   sendButton,
-]).replace(/>,/gi, "> ");
+]);
 
 export default form;
