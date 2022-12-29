@@ -1,18 +1,16 @@
 import form from "../fragments/form.mjs";
-import { setEventListener } from "../modules/events/event-listeners/event-listeners-index.mjs";
-import {
-  handleLimitNumber,
-  handleFibonacciForm,
-  handleFibonacciBtn,
-} from "../modules/events/event-handlers/event-handlers-index.mjs";
+import * as eventListeners from "../events/event-listeners/event-listeners-index.mjs";
+import * as eventHandlers from "../events/event-handlers/event-handlers-index.mjs";
 
-const container = document.querySelector(".container");
+const { setEventListener } = eventListeners;
+const { handleFibonacciForm, handleLimitNumber, handleFibonacciBtn } =
+  eventHandlers;
 
 // | PAGE SECTIONS
 
-container.innerHTML = form;
+document.querySelector(".container").insertAdjacentHTML("afterbegin", form);
 
-// | EVENT LISTENERS
+// | FORM EVENT LISTENERS
 
 const addFormEventListener = setEventListener(
   "#fibonacci-form",
