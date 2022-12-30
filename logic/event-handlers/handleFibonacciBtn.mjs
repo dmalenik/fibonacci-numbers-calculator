@@ -2,6 +2,8 @@ import { fibonacciNumbersOutput } from "../../components/components-index.mjs";
 import * as fibonacciNumbersOutputConfigs from "../../configs/fibonacciNumbersOutputConfigs.mjs";
 import calcFibonacciNums from "../../logic/calcFibonacciNums.mjs";
 
+// this logic has to be on a server
+
 const { sectionConfig, headingConfig } = fibonacciNumbersOutputConfigs;
 const handleFibonacciBtn = (event) => {
   let limit = document
@@ -16,7 +18,7 @@ const handleFibonacciBtn = (event) => {
 
   return document
     .querySelector(".container")
-    .insertAdjacentHTML("afterend", fibonacciNumbers);
+    .insertAdjacentHTML("beforeend", fibonacciNumbers);
 };
 
 export { handleFibonacciBtn };
