@@ -1,25 +1,25 @@
-import form from "../fragments/form.mjs";
-import * as eventListeners from "../events/event-listeners/event-listeners-index.mjs";
-import * as eventHandlers from "../events/event-handlers/event-handlers-index.mjs";
+import { form } from "../components/components-index.mjs";
+import * as formComponentSettings from "../configs/formConfigs.mjs";
+import setEventListener from "../logic/setEventListener.mjs";
+import * as eventHandlers from "../logic/event-handlers/event-handlers-index.mjs";
 
-const { setEventListener } = eventListeners;
-const { handleFibonacciForm, handleLimitNumber, handleFibonacciBtn } =
-  eventHandlers;
+const { formSettings, inputSettings, labelSettings, buttonSettings } =
+  formComponentSettings;
+const { handleLimitNumber, handleFibonacciBtn } = eventHandlers;
 
 // | PAGE SECTIONS
 
-document.querySelector(".container").insertAdjacentHTML("afterbegin", form);
+document
+  .querySelector(".container")
+  .insertAdjacentHTML(
+    "afterbegin",
+    form(formSettings, labelSettings, inputSettings, buttonSettings)
+  );
 
 // | FORM EVENT LISTENERS
 
-const addFormEventListener = setEventListener(
-  "#fibonacci-form",
-  "submit",
-  (e) => handleFibonacciForm(e)
-);
-
 const addLimitNumberEventListener = setEventListener(
-  "#limit-number",
+  "#fibonacci-numbers",
   "change",
   (e) => handleLimitNumber(e)
 );
