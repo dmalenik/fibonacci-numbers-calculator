@@ -9,7 +9,7 @@ const inputConfig = {
   name: "fibonacci-numbers",
 };
 const labelConfig = {
-  name: "Type something",
+  name: "Type a number to see Fibonacci sequence numbers",
 };
 const buttonConfig = {
   id: "fibonacci-button",
