@@ -1,4 +1,4 @@
-const form = (form, label, input, button) =>
+const fibonacciNumbersForm = (form, label, input, button) =>
   `<form 
     id=${form.id} 
     method=${form.method} 
@@ -8,4 +8,4 @@ const form = (form, label, input, button) =>
       <button id=${button.id} type=${button.type} form=${form.id}>${button.children}</button>
   </form>`;
 
-export { form };
+export { fibonacciNumbersForm };

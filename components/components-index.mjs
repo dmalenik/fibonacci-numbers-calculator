@@ -1,2 +1,2 @@
-export { form } from "./form.mjs";
-export { output } from "./output.mjs";
+export { fibonacciNumbersForm } from "./fibonacciNumbersForm.mjs";
+export { fibonacciNumbersOutput } from "./fibonacciNumbersOutput.mjs";

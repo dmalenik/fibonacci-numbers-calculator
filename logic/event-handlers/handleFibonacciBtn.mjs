@@ -1,16 +1,16 @@
-import { output } from "../../components/components-index.mjs";
-import * as outputSettings from "../../configs/outputConfigs.mjs";
+import { fibonacciNumbersOutput } from "../../components/components-index.mjs";
+import * as fibonacciNumbersOutputConfigs from "../../configs/fibonacciNumbersOutputConfigs.mjs";
 import calcFibonacciNums from "../../logic/calcFibonacciNums.mjs";
 
-const { sectionSettings, headingSettings } = outputSettings;
+const { sectionConfig, headingConfig } = fibonacciNumbersOutputConfigs;
 const handleFibonacciBtn = (event) => {
   let limit = document
     .querySelector("#fibonacci-numbers")
     .getAttribute("value");
   let fibonacciNumsList = calcFibonacciNums(limit);
-  let fibonacciNumbers = output(
-    sectionSettings,
-    headingSettings,
+  let fibonacciNumbers = fibonacciNumbersOutput(
+    sectionConfig,
+    headingConfig,
     fibonacciNumsList
   );
 
