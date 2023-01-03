@@ -3,9 +3,16 @@ import * as fibonacciNumbersFormConfigs from "../configs/fibonacciNumbersFormCon
 import setEventListener from "../logic/setEventListener.mjs";
 import * as eventHandlers from "../logic/event-handlers/event-handlers-index.mjs";
 
+import normalize from "../assets/styles/normalize.css" assert { type: "css" };
+import global from "../assets/styles/global.css" assert { type: "css" };
+import utilities from "../assets/styles/utilities.css" assert { type: "css" };
+import container from "../assets/styles/container.css" assert { type: "css" };
+
 const { formConfig, inputConfig, labelConfig, buttonConfig } =
   fibonacciNumbersFormConfigs;
 const { handleLimitNumber, handleFibonacciBtn } = eventHandlers;
+
+document.adoptedStyleSheets = [normalize, global, utilities, container];
 
 // | PAGE SECTIONS
 
