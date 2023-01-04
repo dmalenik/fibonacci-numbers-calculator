@@ -1,11 +1,34 @@
-const fibonacciNumbersForm = (form, label, input, button) =>
-  `<form 
-    id=${form.id} 
-    method=${form.method} 
-    action=${form.action}>
-      <label for=${input.id}>${label.name}</label>
-      <input id=${input.id} type=${input.type} name=${input.name} />
-      <button id=${button.id} type=${button.type} form=${form.id}>${button.children}</button>
-  </form>`;
+const fibonacciNumbersForm = document.createDocumentFragment();
+const form = document.createElement("form");
+
+form.setAttribute("id", "fibonacci-form");
+form.setAttribute("method", "");
+form.setAttribute("action", "");
+
+const label = document.createElement("label");
+
+label.setAttribute("for", "fibonacci-numbers");
+
+label.innerText = "Type a number to see Fibonacci sequence numbers";
+
+const input = document.createElement("input");
+
+input.setAttribute("id", "fibonacci-numbers");
+input.setAttribute("type", "number");
+input.setAttribute("name", "fibonacci-numbers");
+
+const send = document.createElement("button");
+
+send.setAttribute("id", "fibonacci-button");
+send.setAttribute("type", "button");
+send.setAttribute("form", "fibonacci-form");
+
+send.innerText = "Send";
+
+form.appendChild(label);
+form.appendChild(input);
+form.appendChild(send);
+
+fibonacciNumbersForm.append(form);
 
 export { fibonacciNumbersForm };
