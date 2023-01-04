@@ -13,8 +13,8 @@ const handleFibonacciBtn = (event) => {
       .querySelector("#fibonacci-numbers")
       .getAttribute("value");
     let fibonacciNumbers = calcFibonacciNumbs(limit);
-    
-    document.querySelector("#numbers").innerText = fibonacciNumbers;
+
+    document.querySelector("#numbers").innerText = fibonacciNumbers.join(" ");
 
     isMount = true;
   } else {
@@ -23,7 +23,7 @@ const handleFibonacciBtn = (event) => {
       .getAttribute("value");
     let fibonacciNumbers = calcFibonacciNumbs(limit);
 
-    document.querySelector("#numbers").innerText = fibonacciNumbers;
+    document.querySelector("#numbers").innerText = fibonacciNumbers.join(" ");
   }
 };
 
