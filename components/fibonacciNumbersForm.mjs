@@ -5,11 +5,13 @@ form.setAttribute("id", "fibonacci-form");
 form.setAttribute("method", "");
 form.setAttribute("action", "");
 
+form.classList.add("f-row", "f-col-gap");
+
 const label = document.createElement("label");
 
 label.setAttribute("for", "fibonacci-numbers");
 
-label.innerText = "Type a number to see Fibonacci sequence numbers";
+label.innerText = "Type a number to see Fibonacci sequence numbers:";
 
 const input = document.createElement("input");
 

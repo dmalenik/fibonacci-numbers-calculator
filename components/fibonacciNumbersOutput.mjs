@@ -1,19 +1,23 @@
 const fibonacciNumbersOutput = document.createDocumentFragment();
-const section = document.createElement("section");
+const output = document.createElement("section");
 
-section.setAttribute("id", "output");
+output.setAttribute("id", "output");
+
+output.classList.add("w-100", "f-col", "f-y-center", "f-x-center");
 
 const heading = document.createElement("h3");
 
 heading.innerText = "The Fibonacci sequence numbers: ";
 
-const p = document.createElement("p");
+const numbers = document.createElement("p");
 
-p.setAttribute("id", "numbers");
+numbers.setAttribute("id", "numbers");
 
-section.appendChild(heading);
-section.appendChild(p);
+numbers.classList.add("w-100", "t-center");
 
-fibonacciNumbersOutput.append(section);
+output.appendChild(heading);
+output.appendChild(numbers);
+
+fibonacciNumbersOutput.append(output);
 
 export { fibonacciNumbersOutput };
