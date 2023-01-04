@@ -12,8 +12,6 @@ const { formConfig, inputConfig, labelConfig, buttonConfig } =
   fibonacciNumbersFormConfigs;
 const { handleLimitNumber, handleFibonacciBtn } = eventHandlers;
 
-document.adoptedStyleSheets = [normalize, global, utilities, container];
-
 // | PAGE SECTIONS
 
 document
@@ -23,7 +21,7 @@ document
     fibonacciNumbersForm(formConfig, labelConfig, inputConfig, buttonConfig)
   );
 
-// | FORM EVENT LISTENERS
+// | EVENT LISTENERS
 
 const addLimitNumberEventListener = setEventListener(
   "#fibonacci-numbers",
@@ -36,3 +34,7 @@ const addFibonacciBtnEventListener = setEventListener(
   "click",
   (e) => handleFibonacciBtn(e)
 );
+
+// | STYLES
+
+document.adoptedStyleSheets = [normalize, global, utilities, container];
