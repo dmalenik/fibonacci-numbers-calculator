@@ -1,5 +1,5 @@
-import setFibonacciNumbersComponent from "../setFibonacciNumbersComponent.mjs";
-import updateFibonacciNumbersComponent from "../updateFibonacciNumbersComponent.mjs";
+import calcFibonacciNumbs from "../calcFibonacciNums.mjs";
+import { fibonacciNumbersOutput } from "../../components/components-index.mjs";
 
 // this logic has to be on a server
 
@@ -7,11 +7,23 @@ let isMount = false;
 
 const handleFibonacciBtn = (event) => {
   if (!isMount) {
-    setFibonacciNumbersComponent(event);
+    document.querySelector(".container").appendChild(fibonacciNumbersOutput);
+
+    let limit = document
+      .querySelector("#fibonacci-numbers")
+      .getAttribute("value");
+    let fibonacciNumbers = calcFibonacciNumbs(limit);
+    
+    document.querySelector("#numbers").innerText = fibonacciNumbers;
 
     isMount = true;
   } else {
-    updateFibonacciNumbersComponent(event);
+    let limit = document
+      .querySelector("#fibonacci-numbers")
+      .getAttribute("value");
+    let fibonacciNumbers = calcFibonacciNumbs(limit);
+
+    document.querySelector("#numbers").innerText = fibonacciNumbers;
   }
 };
 

@@ -1,7 +1,19 @@
-const fibonacciNumbersOutput = (section, heading, text, children) =>
-  `<section id=${section.id}>
-    <h${heading.size}>${heading.text}</h${heading.size}>
-    <p id=${text.id}>${children}</p>
-  </section>`;
+const fibonacciNumbersOutput = document.createDocumentFragment();
+const section = document.createElement("section");
+
+section.setAttribute("id", "output");
+
+const heading = document.createElement("h3");
+
+heading.innerText = "The Fibonacci sequence numbers: ";
+
+const p = document.createElement("p");
+
+p.setAttribute("id", "numbers");
+
+section.appendChild(heading);
+section.appendChild(p);
+
+fibonacciNumbersOutput.append(section);
 
 export { fibonacciNumbersOutput };
