@@ -47,6 +47,9 @@ send.addEventListener("click", (event) => {
       .querySelector("#fibonacci-form")
       .classList.replace("f-row", "d-hidden");
     document.querySelector(".container").appendChild(fibonacciNumbersOutput);
+    document.querySelector(
+      "#output h3"
+    ).innerText = `The Fibonacci sequence numbers up to the limit ${limit} are: `;
 
     isMount = true;
   } else {
@@ -54,6 +57,9 @@ send.addEventListener("click", (event) => {
       .querySelector("#fibonacci-form")
       .classList.replace("f-row", "d-hidden");
     document.querySelector("#output").classList.replace("d-hidden", "f-col");
+    document.querySelector(
+      "#output h3"
+    ).innerText = `The Fibonacci sequence numbers up to the limit ${limit} are: `;
   }
 
   document.querySelector("#numbers").innerText = fibonacciNumbers.join(" ");

@@ -6,9 +6,6 @@ output.setAttribute("id", "output");
 output.classList.add("w-100", "f-col", "f-y-center", "f-x-center");
 
 const heading = document.createElement("h3");
-
-heading.innerText = "The Fibonacci sequence numbers: ";
-
 const numbers = document.createElement("p");
 
 numbers.setAttribute("id", "numbers");
