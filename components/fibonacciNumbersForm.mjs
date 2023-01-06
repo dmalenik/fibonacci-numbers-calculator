@@ -1,3 +1,6 @@
+import calcFibonacciNums from "../logic/calcFibonacciNums.mjs";
+import { fibonacciNumbersOutput } from "./fibonacciNumbersOutput.mjs";
+
 const fibonacciNumbersForm = document.createDocumentFragment();
 const form = document.createElement("form");
 
@@ -19,6 +22,10 @@ input.setAttribute("id", "fibonacci-numbers");
 input.setAttribute("type", "number");
 input.setAttribute("name", "fibonacci-numbers");
 
+input.addEventListener("change", (event) =>
+  event.target.setAttribute("value", event.target.value)
+);
+
 const send = document.createElement("button");
 
 send.setAttribute("id", "fibonacci-button");
@@ -26,6 +33,22 @@ send.setAttribute("type", "button");
 send.setAttribute("form", "fibonacci-form");
 
 send.innerText = "Send";
+
+send.addEventListener("click", (event) => {
+  let limit = document
+    .querySelector("#fibonacci-numbers")
+    .getAttribute("value");
+  let fibonacciNumbers = calcFibonacciNums(limit);
+  let isMount = false;
+
+  if (!isMount) {
+    document.querySelector(".container").appendChild(fibonacciNumbersOutput);
+
+    isMount = true;
+  }
+
+  document.querySelector("#numbers").innerText = fibonacciNumbers.join(" ");
+});
 
 form.appendChild(label);
 form.appendChild(input);
