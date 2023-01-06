@@ -34,17 +34,26 @@ send.setAttribute("form", "fibonacci-form");
 
 send.innerText = "Send";
 
+let isMount = false;
+
 send.addEventListener("click", (event) => {
   let limit = document
     .querySelector("#fibonacci-numbers")
     .getAttribute("value");
   let fibonacciNumbers = calcFibonacciNums(limit);
-  let isMount = false;
 
   if (isMount === false) {
+    document
+      .querySelector("#fibonacci-form")
+      .classList.replace("f-row", "d-hidden");
     document.querySelector(".container").appendChild(fibonacciNumbersOutput);
 
     isMount = true;
+  } else {
+    document
+      .querySelector("#fibonacci-form")
+      .classList.replace("f-row", "d-hidden");
+    document.querySelector("#output").classList.replace("d-hidden", "f-col");
   }
 
   document.querySelector("#numbers").innerText = fibonacciNumbers.join(" ");
