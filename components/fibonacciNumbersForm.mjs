@@ -41,7 +41,7 @@ send.addEventListener("click", (event) => {
   let fibonacciNumbers = calcFibonacciNums(limit);
   let isMount = false;
 
-  if (!isMount) {
+  if (isMount === false) {
     document.querySelector(".container").appendChild(fibonacciNumbersOutput);
 
     isMount = true;
