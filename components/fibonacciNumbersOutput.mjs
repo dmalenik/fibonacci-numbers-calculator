@@ -1,19 +1,35 @@
 const fibonacciNumbersOutput = document.createDocumentFragment();
-const section = document.createElement("section");
+const output = document.createElement("section");
 
-section.setAttribute("id", "output");
+output.setAttribute("id", "output");
+
+output.classList.add("w-100", "f-col", "f-y-center", "f-x-center");
 
 const heading = document.createElement("h3");
+const numbers = document.createElement("p");
 
-heading.innerText = "The Fibonacci sequence numbers: ";
+numbers.setAttribute("id", "numbers");
 
-const p = document.createElement("p");
+numbers.classList.add("w-100", "t-center");
 
-p.setAttribute("id", "numbers");
+const tryAgainBtn = document.createElement("button");
 
-section.appendChild(heading);
-section.appendChild(p);
+tryAgainBtn.setAttribute("id", "again");
+tryAgainBtn.setAttribute("type", "button");
 
-fibonacciNumbersOutput.append(section);
+tryAgainBtn.innerText = "Try again";
+
+tryAgainBtn.addEventListener("click", (event) => {
+  output.classList.replace("f-col", "d-hidden");
+  document
+    .querySelector("#fibonacci-form")
+    .classList.replace("d-hidden", "f-row");
+});
+
+output.appendChild(heading);
+output.appendChild(numbers);
+output.appendChild(tryAgainBtn);
+
+fibonacciNumbersOutput.append(output);
 
 export { fibonacciNumbersOutput };
