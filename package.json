@@ -1,0 +1,30 @@
+{
+  "name": "fibonacci-numbers-generator",
+  "version": "1.0.0",
+  "description": "generates Fibonacci numbers up to the specified limit",
+  "main": "./pages/main.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmalenik/fibonacci-numbers-generator.git"
+  },
+  "keywords": [
+    "Fibonacci",
+    "numbers",
+    "generator",
+    "calculator"
+  ],
+  "author": "Dmytro Malenik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmalenik/fibonacci-numbers-generator/issues"
+  },
+  "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator#readme",
+  "dependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
