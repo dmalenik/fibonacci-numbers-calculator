@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator#readme",
   "dependencies": {
+    "@babel/eslint-parser": "^7.19.1",
     "eslint": "^8.31.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0"
