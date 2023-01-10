@@ -1,35 +1,36 @@
-const fibonacciNumbersOutput = document.createDocumentFragment();
-const output = document.createElement('section');
+const fibonacciNumbersOutput = () => {
+    const output = document.createElement('section')
 
-output.setAttribute('id', 'output');
+    output.setAttribute('id', 'output')
 
-output.classList.add('w-100', 'f-col', 'f-y-center', 'f-x-center');
+    output.classList.add('w-100', 'f-col', 'f-y-center', 'f-x-center')
 
-const heading = document.createElement('h3');
-const numbers = document.createElement('p');
+    const heading = document.createElement('h3')
+    const numbers = document.createElement('p')
 
-numbers.setAttribute('id', 'numbers');
+    numbers.setAttribute('id', 'numbers')
 
-numbers.classList.add('w-100', 't-center');
+    numbers.classList.add('w-100', 't-center')
 
-const tryAgainBtn = document.createElement('button');
+    const tryAgainBtn = document.createElement('button')
 
-tryAgainBtn.setAttribute('id', 'again');
-tryAgainBtn.setAttribute('type', 'button');
+    tryAgainBtn.setAttribute('id', 'again')
+    tryAgainBtn.setAttribute('type', 'button')
 
-tryAgainBtn.innerText = 'Try again';
+    tryAgainBtn.innerText = 'Try again'
 
-tryAgainBtn.addEventListener('click', (event) => {
-  output.classList.replace('f-col', 'd-hidden');
-  document
-    .querySelector('#fibonacci-form')
-    .classList.replace('d-hidden', 'f-row');
-});
+    tryAgainBtn.addEventListener('click', (event) => {
+        output.classList.replace('f-col', 'd-hidden')
+        document
+            .querySelector('#fibonacci-form')
+            .classList.replace('d-hidden', 'f-row')
+    })
 
-output.appendChild(heading);
-output.appendChild(numbers);
-output.appendChild(tryAgainBtn);
+    output.appendChild(heading)
+    output.appendChild(numbers)
+    output.appendChild(tryAgainBtn)
 
-fibonacciNumbersOutput.append(output);
+    return output
+}
 
-export { fibonacciNumbersOutput };
+export default fibonacciNumbersOutput
