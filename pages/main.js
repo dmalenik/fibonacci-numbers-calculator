@@ -1,4 +1,4 @@
-import fibonacciNumbersForm from '../components/fibonacciNumbersForm.mjs'
+import fibonacciNumbersForm from '../components/fibonacciNumbersForm.js'
 
 import normalize from '../assets/styles/normalize.css' assert { type: 'css' }
 import global from '../assets/styles/global.css' assert { type: 'css' }
