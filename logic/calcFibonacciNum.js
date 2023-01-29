@@ -7,11 +7,7 @@ const calcFibonacciNum = (queueNumber) => {
         (Math.pow(phi_1, queueNumber) - Math.pow(phi_2, queueNumber)) / sqrt5
     )
 
-    if (fibonacciNumber > 2 ** 53 - 1) {
-        return Number(fibonacciNumber.toExponential())
-    } else {
-        return fibonacciNumber
-    }
+    return fibonacciNumber
 }
 
 module.exports = calcFibonacciNum
