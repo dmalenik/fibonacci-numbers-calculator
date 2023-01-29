@@ -1,5 +1,5 @@
-import calcFibonacciNums from '../logic/calcFibonacciNums.mjs'
-import fibonacciNumbersOutput from './fibonacciNumbersOutput.mjs'
+import calcFibonacciNums from '../logic/calcFibonacciNums.js'
+import fibonacciNumbersOutput from './fibonacciNumbersOutput.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
