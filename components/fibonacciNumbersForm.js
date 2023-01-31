@@ -1,5 +1,5 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-import fibonacciNumbersOutput from './fibonacciNumbersOutput.js'
+import fibonacciNumberOutput from './fibonacciNumberOutput.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -48,7 +48,7 @@ const fibonacciNumbersForm = () => {
                 .classList.replace('f-row', 'd-hidden')
             document
                 .querySelector('.container')
-                .appendChild(fibonacciNumbersOutput())
+                .appendChild(fibonacciNumberOutput())
             document.querySelector(
                 '#output h3'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `

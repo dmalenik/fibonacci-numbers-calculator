@@ -1,4 +1,4 @@
-const fibonacciNumbersOutput = () => {
+const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
 
     output.setAttribute('id', 'output')
@@ -33,4 +33,4 @@ const fibonacciNumbersOutput = () => {
     return output
 }
 
-export default fibonacciNumbersOutput
+export default fibonacciNumberOutput
