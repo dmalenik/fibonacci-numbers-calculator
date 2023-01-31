@@ -1,4 +1,4 @@
-const calcFibonacciNum = require('../logic/calcFibonacciNum')
+import calcFibonacciNum from '../logic/calcFibonacciNum'
 
 describe('test calcFibonacciNum function', () => {
     test('5th Fibonacci number is 5', () => {

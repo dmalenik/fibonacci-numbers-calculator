@@ -10,4 +10,4 @@ const calcFibonacciNum = (queueNumber) => {
     return fibonacciNumber
 }
 
-module.exports = calcFibonacciNum
+export default calcFibonacciNum
