@@ -37,10 +37,10 @@ const fibonacciNumbersForm = () => {
     let isMount = false
 
     send.addEventListener('click', (event) => {
-        let limit = document
+        let sequenceNumber = document
             .querySelector('#fibonacci-numbers')
             .getAttribute('value')
-        let fibonacciNumbers = calcFibonacciNum(limit)
+        let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
         if (isMount === false) {
             document
@@ -51,7 +51,7 @@ const fibonacciNumbersForm = () => {
                 .appendChild(fibonacciNumbersOutput())
             document.querySelector(
                 '#output h3'
-            ).innerText = `The Fibonacci sequence numbers up to the limit ${limit} are: `
+            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
 
             isMount = true
         } else {
@@ -63,11 +63,10 @@ const fibonacciNumbersForm = () => {
                 .classList.replace('d-hidden', 'f-col')
             document.querySelector(
                 '#output h3'
-            ).innerText = `The Fibonacci sequence numbers up to the limit ${limit} are: `
+            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
         }
 
-        document.querySelector('#numbers').innerText =
-            fibonacciNumbers.join(' ')
+        document.querySelector('#numbers').innerText = fibonacciNumber
     })
 
     form.appendChild(label)
