@@ -1,4 +1,4 @@
-import calcFibonacciNums from '../logic/calcFibonacciNums.js'
+import calcFibonacciNum from '../logic/calcFibonacciNum.js'
 import fibonacciNumbersOutput from './fibonacciNumbersOutput.js'
 
 const fibonacciNumbersForm = () => {
@@ -40,7 +40,7 @@ const fibonacciNumbersForm = () => {
         let limit = document
             .querySelector('#fibonacci-numbers')
             .getAttribute('value')
-        let fibonacciNumbers = calcFibonacciNums(limit)
+        let fibonacciNumbers = calcFibonacciNum(limit)
 
         if (isMount === false) {
             document
