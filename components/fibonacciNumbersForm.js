@@ -1,5 +1,5 @@
-import calcFibonacciNums from '../logic/calcFibonacciNums.js'
-import fibonacciNumbersOutput from './fibonacciNumbersOutput.js'
+import calcFibonacciNum from '../logic/calcFibonacciNum.js'
+import fibonacciNumberOutput from './fibonacciNumberOutput.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -37,10 +37,10 @@ const fibonacciNumbersForm = () => {
     let isMount = false
 
     send.addEventListener('click', (event) => {
-        let limit = document
+        let sequenceNumber = document
             .querySelector('#fibonacci-numbers')
             .getAttribute('value')
-        let fibonacciNumbers = calcFibonacciNums(limit)
+        let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
         if (isMount === false) {
             document
@@ -48,10 +48,10 @@ const fibonacciNumbersForm = () => {
                 .classList.replace('f-row', 'd-hidden')
             document
                 .querySelector('.container')
-                .appendChild(fibonacciNumbersOutput())
+                .appendChild(fibonacciNumberOutput())
             document.querySelector(
                 '#output h3'
-            ).innerText = `The Fibonacci sequence numbers up to the limit ${limit} are: `
+            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
 
             isMount = true
         } else {
@@ -63,11 +63,10 @@ const fibonacciNumbersForm = () => {
                 .classList.replace('d-hidden', 'f-col')
             document.querySelector(
                 '#output h3'
-            ).innerText = `The Fibonacci sequence numbers up to the limit ${limit} are: `
+            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
         }
 
-        document.querySelector('#numbers').innerText =
-            fibonacciNumbers.join(' ')
+        document.querySelector('#numbers').innerText = fibonacciNumber
     })
 
     form.appendChild(label)
