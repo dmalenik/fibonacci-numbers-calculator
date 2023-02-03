@@ -45,7 +45,7 @@ const fibonacciNumbersForm = () => {
 
         if (isMount === false) {
             form.animate(moveToLeft, toLeftTiming)
-            // form.classList.replace('f-row', 'd-hidden')
+            form.classList.replace('f-row', 'd-hidden')
             document
                 .querySelector('.container')
                 .appendChild(fibonacciNumberOutput())
@@ -56,7 +56,7 @@ const fibonacciNumbersForm = () => {
             isMount = true
         } else {
             form.animate(moveToLeft, toLeftTiming)
-            // form.classList.replace('f-row', 'd-hidden')
+            form.classList.replace('f-row', 'd-hidden')
             document
                 .querySelector('#output')
                 .classList.replace('d-hidden', 'f-col')
