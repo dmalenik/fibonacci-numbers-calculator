@@ -1,6 +1,5 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
 import fibonacciNumberOutput from './fibonacciNumberOutput.js'
-import { moveToLeft, toLeftTiming } from '../assets/animations/moveToLeft.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -44,7 +43,6 @@ const fibonacciNumbersForm = () => {
         let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
         if (isMount === false) {
-            form.animate(moveToLeft, toLeftTiming)
             form.classList.replace('f-row', 'd-hidden')
             document
                 .querySelector('.container')
@@ -55,7 +53,6 @@ const fibonacciNumbersForm = () => {
 
             isMount = true
         } else {
-            form.animate(moveToLeft, toLeftTiming)
             form.classList.replace('f-row', 'd-hidden')
             document
                 .querySelector('#output')
