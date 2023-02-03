@@ -1,5 +1,7 @@
-import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-import fibonacciNumberOutput from './fibonacciNumberOutput.js'
+import {
+    centerToLeft,
+    centerToLeftTiming,
+} from '../assets/animations/centerToLeft.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -34,35 +36,16 @@ const fibonacciNumbersForm = () => {
 
     send.innerText = 'Send'
 
-    let isMount = false
-
     send.addEventListener('click', (event) => {
         let sequenceNumber = document
             .querySelector('#fibonacci-numbers')
             .getAttribute('value')
-        let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
-        if (isMount === false) {
-            form.classList.replace('f-row', 'd-hidden')
-            document
-                .querySelector('.container')
-                .appendChild(fibonacciNumberOutput())
-            document.querySelector(
-                '#output h3'
-            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
+        sessionStorage.setItem('sequenceNumber', sequenceNumber)
 
-            isMount = true
-        } else {
-            form.classList.replace('f-row', 'd-hidden')
-            document
-                .querySelector('#output')
-                .classList.replace('d-hidden', 'f-col')
-            document.querySelector(
-                '#output h3'
-            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
-        }
-
-        document.querySelector('#numbers').innerText = fibonacciNumber
+        // form.animate(centerToLeft, centerToLeftTiming)
+        form.classList.replace('f-row', 'd-hidden')
+        document.querySelector('#output').classList.replace('d-hidden', 'f-col')
     })
 
     form.appendChild(label)
