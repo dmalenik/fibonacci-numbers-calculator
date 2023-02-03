@@ -1,16 +1,22 @@
+import calcFibonacciNum from '../logic/calcFibonacciNum.js'
+import {
+    leftToCenter,
+    leftToCenterTiming,
+} from '../assets/animations/leftToCenter.js'
+
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
 
     output.setAttribute('id', 'output')
 
-    output.classList.add('w-100', 'f-col', 'f-y-center', 'f-x-center')
+    output.classList.add('w-100', 'd-hidden', 'f-y-center', 'f-x-center')
 
     const heading = document.createElement('h3')
-    const numbers = document.createElement('p')
 
-    numbers.setAttribute('id', 'numbers')
+    let sequenceNumber = sessionStorage.getItem('sequenceNumber')
+    let fibonacciNumber = calcFibonacciNum(Number(sequenceNumber))
 
-    numbers.classList.add('w-100', 't-center')
+    heading.innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
 
     const tryAgainBtn = document.createElement('button')
 
