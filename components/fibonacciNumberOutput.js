@@ -1,8 +1,4 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-import {
-    leftToCenter,
-    leftToCenterTiming,
-} from '../assets/animations/leftToCenter.js'
 
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
