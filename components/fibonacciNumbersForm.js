@@ -20,6 +20,7 @@ const fibonacciNumbersForm = () => {
     input.setAttribute('id', 'fibonacci-numbers')
     input.setAttribute('type', 'number')
     input.setAttribute('name', 'fibonacci-numbers')
+    input.setAttribute('min', 0)
 
     input.addEventListener('change', (event) =>
         event.target.setAttribute('value', event.target.value)
