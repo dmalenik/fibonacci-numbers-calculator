@@ -1,4 +1,5 @@
 import fibonacciNumbersForm from '../components/fibonacciNumbersForm.js'
+import fibonacciNumberOutput from '../components/fibonacciNumberOutput.js'
 
 import normalize from '../assets/styles/normalize.css' assert { type: 'css' }
 import global from '../assets/styles/global.css' assert { type: 'css' }
@@ -9,6 +10,7 @@ import form from '../assets/styles/form.css' assert { type: 'css' }
 // | PAGE SECTIONS
 
 document.querySelector('.container').appendChild(fibonacciNumbersForm())
+document.querySelector('.container').appendChild(fibonacciNumberOutput())
 
 // | STYLES
 

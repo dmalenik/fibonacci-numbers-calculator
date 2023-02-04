@@ -1,6 +1,4 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-import fibonacciNumberOutput from './fibonacciNumberOutput.js'
-import { moveToLeft, toLeftTiming } from '../assets/animations/moveToLeft.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -22,6 +20,7 @@ const fibonacciNumbersForm = () => {
     input.setAttribute('id', 'fibonacci-numbers')
     input.setAttribute('type', 'number')
     input.setAttribute('name', 'fibonacci-numbers')
+    input.setAttribute('min', 0)
 
     input.addEventListener('change', (event) =>
         event.target.setAttribute('value', event.target.value)
@@ -35,37 +34,16 @@ const fibonacciNumbersForm = () => {
 
     send.innerText = 'Send'
 
-    let isMount = false
-
     send.addEventListener('click', (event) => {
-        let sequenceNumber = document
-            .querySelector('#fibonacci-numbers')
-            .getAttribute('value')
+        form.classList.replace('f-row', 'd-hidden')
+        document.querySelector('#output').classList.replace('d-hidden', 'f-col')
+
+        let sequenceNumber = Number(input.getAttribute('value'))
         let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
-        if (isMount === false) {
-            form.animate(moveToLeft, toLeftTiming)
-            // form.classList.replace('f-row', 'd-hidden')
-            document
-                .querySelector('.container')
-                .appendChild(fibonacciNumberOutput())
-            document.querySelector(
-                '#output h3'
-            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
-
-            isMount = true
-        } else {
-            form.animate(moveToLeft, toLeftTiming)
-            // form.classList.replace('f-row', 'd-hidden')
-            document
-                .querySelector('#output')
-                .classList.replace('d-hidden', 'f-col')
-            document.querySelector(
-                '#output h3'
-            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: `
-        }
-
-        document.querySelector('#numbers').innerText = fibonacciNumber
+        document.querySelector(
+            '#output h3'
+        ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
     })
 
     form.appendChild(label)

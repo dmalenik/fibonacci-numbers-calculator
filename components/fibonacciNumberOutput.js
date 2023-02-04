@@ -3,14 +3,9 @@ const fibonacciNumberOutput = () => {
 
     output.setAttribute('id', 'output')
 
-    output.classList.add('w-100', 'f-col', 'f-y-center', 'f-x-center')
+    output.classList.add('w-100', 'd-hidden', 'f-y-center', 'f-x-center')
 
     const heading = document.createElement('h3')
-    const numbers = document.createElement('p')
-
-    numbers.setAttribute('id', 'numbers')
-
-    numbers.classList.add('w-100', 't-center')
 
     const tryAgainBtn = document.createElement('button')
 
@@ -27,7 +22,6 @@ const fibonacciNumberOutput = () => {
     })
 
     output.appendChild(heading)
-    output.appendChild(numbers)
     output.appendChild(tryAgainBtn)
 
     return output
