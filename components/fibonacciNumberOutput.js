@@ -1,5 +1,3 @@
-import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
 
@@ -8,11 +6,6 @@ const fibonacciNumberOutput = () => {
     output.classList.add('w-100', 'd-hidden', 'f-y-center', 'f-x-center')
 
     const heading = document.createElement('h3')
-
-    let sequenceNumber = sessionStorage.getItem('sequenceNumber')
-    let fibonacciNumber = calcFibonacciNum(Number(sequenceNumber))
-
-    heading.innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
 
     const tryAgainBtn = document.createElement('button')
 
@@ -29,7 +22,6 @@ const fibonacciNumberOutput = () => {
     })
 
     output.appendChild(heading)
-    output.appendChild(numbers)
     output.appendChild(tryAgainBtn)
 
     return output
