@@ -1,11 +1,11 @@
 const rightToCenter = [
     {
         position: 'absolute',
-        right: '25%',
+        left: '0vw',
     },
     {
         position: 'absolute',
-        right: '0%',
+        left: '25vw',
     },
 ]
 const rightToCenterTiming = {

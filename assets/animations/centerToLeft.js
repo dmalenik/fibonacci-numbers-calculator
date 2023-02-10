@@ -1,11 +1,11 @@
 const centerToLeft = [
     {
         position: 'absolute',
-        left: '25%',
+        left: '25vw',
     },
     {
         position: 'absolute',
-        left: '0%',
+        left: '0vw',
     },
 ]
 const centerToLeftTiming = {
