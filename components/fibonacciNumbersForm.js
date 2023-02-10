@@ -2,6 +2,10 @@ import {
     centerToLeft,
     centerToLeftTiming,
 } from '../assets/animations/centerToLeft.js'
+import {
+    rightToCenter,
+    rightToCenterTiming,
+} from '../assets/animations/rightToCenter.js'
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
 
 const fibonacciNumbersForm = () => {
@@ -53,6 +57,9 @@ const fibonacciNumbersForm = () => {
             document.querySelector(
                 '#output h3'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
+            document
+                .querySelector('#output')
+                .animate(rightToCenter, rightToCenterTiming)
         })
     })
 
