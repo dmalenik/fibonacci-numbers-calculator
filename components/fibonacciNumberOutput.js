@@ -1,9 +1,18 @@
+import {
+    centerToLeft,
+    centerToLeftTiming,
+} from '../assets/animations/centerToLeft.js'
+import {
+    rightToCenter,
+    rightToCenterTiming,
+} from '../assets/animations/rightToCenter.js'
+
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
 
     output.setAttribute('id', 'output')
 
-    output.classList.add('w-100', 'd-hidden', 'f-y-center', 'f-x-center')
+    output.classList.add('d-hidden', 'f-y-center', 'f-x-center')
 
     const heading = document.createElement('h3')
 
@@ -15,10 +24,21 @@ const fibonacciNumberOutput = () => {
     tryAgainBtn.innerText = 'Try again'
 
     tryAgainBtn.addEventListener('click', (event) => {
-        output.classList.replace('f-col', 'd-hidden')
-        document
-            .querySelector('#fibonacci-form')
-            .classList.replace('d-hidden', 'f-row')
+        let outputCenterToLeft = output.animate(
+            centerToLeft,
+            centerToLeftTiming
+        )
+
+        outputCenterToLeft.finished.then(() => {
+            output.classList.replace('f-col', 'd-hidden')
+            document
+                .querySelector('#fibonacci-form')
+                .classList.replace('d-hidden', 'f-row')
+
+            document
+                .querySelector('#fibonacci-form')
+                .animate(rightToCenter, rightToCenterTiming)
+        })
     })
 
     output.appendChild(heading)

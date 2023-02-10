@@ -1,3 +1,11 @@
+import {
+    centerToLeft,
+    centerToLeftTiming,
+} from '../assets/animations/centerToLeft.js'
+import {
+    rightToCenter,
+    rightToCenterTiming,
+} from '../assets/animations/rightToCenter.js'
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
 
 const fibonacciNumbersForm = () => {
@@ -35,15 +43,24 @@ const fibonacciNumbersForm = () => {
     send.innerText = 'Send'
 
     send.addEventListener('click', (event) => {
-        form.classList.replace('f-row', 'd-hidden')
-        document.querySelector('#output').classList.replace('d-hidden', 'f-col')
+        let formCenterToLeft = form.animate(centerToLeft, centerToLeftTiming)
 
-        let sequenceNumber = Number(input.getAttribute('value'))
-        let fibonacciNumber = calcFibonacciNum(sequenceNumber)
+        formCenterToLeft.finished.then(() => {
+            form.classList.replace('f-row', 'd-hidden')
+            document
+                .querySelector('#output')
+                .classList.replace('d-hidden', 'f-col')
 
-        document.querySelector(
-            '#output h3'
-        ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
+            let sequenceNumber = Number(input.getAttribute('value'))
+            let fibonacciNumber = calcFibonacciNum(sequenceNumber)
+
+            document.querySelector(
+                '#output h3'
+            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
+            document
+                .querySelector('#output')
+                .animate(rightToCenter, rightToCenterTiming)
+        })
     })
 
     form.appendChild(label)
