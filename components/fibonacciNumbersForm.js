@@ -21,7 +21,7 @@ const fibonacciNumbersForm = () => {
 
     label.setAttribute('for', 'fibonacci-numbers')
 
-    label.innerText = 'Type a number to see Fibonacci sequence numbers:'
+    label.innerText = 'Type a sequence number to see a Fibonacci number within a specific order:'
 
     const input = document.createElement('input')
 
