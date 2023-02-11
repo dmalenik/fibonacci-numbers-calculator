@@ -21,7 +21,7 @@ const fibonacciNumbersForm = () => {
 
     label.setAttribute('for', 'fibonacci-numbers')
 
-    label.innerText = 'Type a number to see Fibonacci sequence numbers:'
+    label.innerText = 'Type a sequence number to see a Fibonacci number within a specific order:'
 
     const input = document.createElement('input')
 
@@ -55,7 +55,7 @@ const fibonacciNumbersForm = () => {
             let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
             document.querySelector(
-                '#output h3'
+                '#output h2'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
             document
                 .querySelector('#output')
