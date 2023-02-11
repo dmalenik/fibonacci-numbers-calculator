@@ -1,7 +1,7 @@
 const centerToLeft = [
     {
         position: 'absolute',
-        left: '25vw',
+        left: '20vw',
     },
     {
         position: 'absolute',
