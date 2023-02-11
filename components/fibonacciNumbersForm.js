@@ -1,11 +1,3 @@
-import {
-    centerToLeft,
-    centerToLeftTiming,
-} from '../assets/animations/centerToLeft.js'
-import {
-    rightToCenter,
-    rightToCenterTiming,
-} from '../assets/animations/rightToCenter.js'
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
 
 const fibonacciNumbersForm = () => {
@@ -21,7 +13,8 @@ const fibonacciNumbersForm = () => {
 
     label.setAttribute('for', 'fibonacci-numbers')
 
-    label.innerText = 'Type a sequence number to see a Fibonacci number within a specific order:'
+    label.innerText =
+        'Type a sequence number to see a Fibonacci number within a specific order:'
 
     const input = document.createElement('input')
 
@@ -43,7 +36,21 @@ const fibonacciNumbersForm = () => {
     send.innerText = 'Send'
 
     send.addEventListener('click', (event) => {
-        let formCenterToLeft = form.animate(centerToLeft, centerToLeftTiming)
+        let formCenterToLeft = form.animate(
+            [
+                {
+                    position: 'absolute',
+                    left: '21vw',
+                },
+                {
+                    position: 'absolute',
+                    left: '0vw',
+                },
+            ],
+            {
+                duration: 800,
+            }
+        )
 
         formCenterToLeft.finished.then(() => {
             form.classList.replace('f-row', 'd-hidden')
@@ -57,9 +64,21 @@ const fibonacciNumbersForm = () => {
             document.querySelector(
                 '#output h2'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
-            document
-                .querySelector('#output')
-                .animate(rightToCenter, rightToCenterTiming)
+            document.querySelector('#output').animate(
+                [
+                    {
+                        position: 'absolute',
+                        left: '0vw',
+                    },
+                    {
+                        position: 'absolute',
+                        left: '28vw',
+                    },
+                ],
+                {
+                    duration: 800,
+                }
+            )
         })
     })
 

@@ -1,12 +1,3 @@
-import {
-    centerToLeft,
-    centerToLeftTiming,
-} from '../assets/animations/centerToLeft.js'
-import {
-    rightToCenter,
-    rightToCenterTiming,
-} from '../assets/animations/rightToCenter.js'
-
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
 
@@ -27,8 +18,19 @@ const fibonacciNumberOutput = () => {
 
     tryAgainBtn.addEventListener('click', (event) => {
         let outputCenterToLeft = output.animate(
-            centerToLeft,
-            centerToLeftTiming
+            [
+                {
+                    position: 'absolute',
+                    left: '28vw',
+                },
+                {
+                    position: 'absolute',
+                    left: '0vw',
+                },
+            ],
+            {
+                duration: 800,
+            }
         )
 
         outputCenterToLeft.finished.then(() => {
@@ -37,9 +39,21 @@ const fibonacciNumberOutput = () => {
                 .querySelector('#fibonacci-form')
                 .classList.replace('d-hidden', 'f-row')
 
-            document
-                .querySelector('#fibonacci-form')
-                .animate(rightToCenter, rightToCenterTiming)
+            document.querySelector('#fibonacci-form').animate(
+                [
+                    {
+                        position: 'absolute',
+                        left: '0vw',
+                    },
+                    {
+                        position: 'absolute',
+                        left: '21vw',
+                    },
+                ],
+                {
+                    duration: 800,
+                }
+            )
         })
     })
 
