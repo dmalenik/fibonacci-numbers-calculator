@@ -55,7 +55,7 @@ const fibonacciNumbersForm = () => {
             let fibonacciNumber = calcFibonacciNum(sequenceNumber)
 
             document.querySelector(
-                '#output h3'
+                '#output h2'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
             document
                 .querySelector('#output')
