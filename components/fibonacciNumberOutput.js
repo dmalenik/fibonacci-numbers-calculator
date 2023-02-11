@@ -16,6 +16,8 @@ const fibonacciNumberOutput = () => {
 
     const heading = document.createElement('h3')
 
+    heading.innerText = 'Display the result of a Fibonacci number calculations'
+
     const tryAgainBtn = document.createElement('button')
 
     tryAgainBtn.setAttribute('id', 'again')
