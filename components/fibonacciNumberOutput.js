@@ -14,7 +14,7 @@ const fibonacciNumberOutput = () => {
 
     output.classList.add('d-hidden', 'f-y-center', 'f-x-center')
 
-    const heading = document.createElement('h3')
+    const heading = document.createElement('h2')
 
     heading.innerText = 'Display the result of a Fibonacci number calculations'
 
