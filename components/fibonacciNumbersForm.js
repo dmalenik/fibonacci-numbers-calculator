@@ -1,4 +1,6 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
+import animateFormCenterToLeft from '../assets/animations/animateFormCenterToLeft.js'
+import animateOutputLeftToCenter from '../assets/animations/animateOutputLeftToCenter.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -36,21 +38,7 @@ const fibonacciNumbersForm = () => {
     send.innerText = 'Send'
 
     send.addEventListener('click', (event) => {
-        let formCenterToLeft = form.animate(
-            [
-                {
-                    position: 'absolute',
-                    left: '21vw',
-                },
-                {
-                    position: 'absolute',
-                    left: '0vw',
-                },
-            ],
-            {
-                duration: 800,
-            }
-        )
+        let formCenterToLeft = animateFormCenterToLeft(form)
 
         formCenterToLeft.finished.then(() => {
             form.classList.replace('f-row', 'd-hidden')
@@ -64,20 +52,9 @@ const fibonacciNumbersForm = () => {
             document.querySelector(
                 '#output h2'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
-            document.querySelector('#output').animate(
-                [
-                    {
-                        position: 'absolute',
-                        left: '0vw',
-                    },
-                    {
-                        position: 'absolute',
-                        left: '28vw',
-                    },
-                ],
-                {
-                    duration: 800,
-                }
+
+            let outputLeftToCenter = animateOutputLeftToCenter(
+                document.querySelector('#output')
             )
         })
     })

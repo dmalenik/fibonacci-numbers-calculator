@@ -1,3 +1,6 @@
+import animateOutputCenterToLeft from '../assets/animations/animateOutputCenterToLeft.js'
+import animateFormLeftToCenter from '../assets/animations/animateFormLeftToCenter.js'
+
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
 
@@ -17,21 +20,7 @@ const fibonacciNumberOutput = () => {
     tryAgainBtn.innerText = 'Try again'
 
     tryAgainBtn.addEventListener('click', (event) => {
-        let outputCenterToLeft = output.animate(
-            [
-                {
-                    position: 'absolute',
-                    left: '28vw',
-                },
-                {
-                    position: 'absolute',
-                    left: '0vw',
-                },
-            ],
-            {
-                duration: 800,
-            }
-        )
+        let outputCenterToLeft = animateOutputCenterToLeft(output)
 
         outputCenterToLeft.finished.then(() => {
             output.classList.replace('f-col', 'd-hidden')
@@ -39,20 +28,8 @@ const fibonacciNumberOutput = () => {
                 .querySelector('#fibonacci-form')
                 .classList.replace('d-hidden', 'f-row')
 
-            document.querySelector('#fibonacci-form').animate(
-                [
-                    {
-                        position: 'absolute',
-                        left: '0vw',
-                    },
-                    {
-                        position: 'absolute',
-                        left: '21vw',
-                    },
-                ],
-                {
-                    duration: 800,
-                }
+            let formLeftToCenter = animateFormLeftToCenter(
+                document.querySelector('#fibonacci-form')
             )
         })
     })
