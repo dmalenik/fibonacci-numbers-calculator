@@ -8,6 +8,7 @@ import {
     formLeftToCenterTiming,
 } from '../assets/animations/formLeftToCenter.js'
 import changeClass from '../logic/changeClass.js'
+import replaceElements from '../logic/replaceElements.js'
 
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
@@ -35,13 +36,14 @@ const fibonacciNumberOutput = () => {
         )
 
         outputCenterToLeftAnimation.finished.then(() => {
-            changeClass(output, 'f-col', 'd-hidden')
-            changeClass(
-                document.querySelector('#fibonacci-form'),
-                'd-hidden',
-                'f-row'
+            replaceElements(
+                changeClass(output, 'f-col', 'd-hidden'),
+                changeClass(
+                    document.querySelector('#fibonacci-form'),
+                    'd-hidden',
+                    'f-row'
+                )
             )
-
             animateElement(
                 document.querySelector('#fibonacci-form'),
                 formLeftToCenter,
