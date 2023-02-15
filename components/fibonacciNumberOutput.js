@@ -1,5 +1,13 @@
-import animateOutputCenterToLeft from '../assets/animations/animateOutputCenterToLeft.js'
-import animateFormLeftToCenter from '../assets/animations/animateFormLeftToCenter.js'
+import animateElement from '../logic/animateElement.js'
+import {
+    outputCenterToLeft,
+    outputCenterToLeftTiming,
+} from '../assets/animations/outputCenterToLeft.js'
+import {
+    formLeftToCenter,
+    formLeftToCenterTiming,
+} from '../assets/animations/formLeftToCenter.js'
+import changeClass from '../logic/changeClass.js'
 
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
@@ -20,16 +28,24 @@ const fibonacciNumberOutput = () => {
     tryAgainBtn.innerText = 'Try again'
 
     tryAgainBtn.addEventListener('click', (event) => {
-        let outputCenterToLeft = animateOutputCenterToLeft(output)
+        let outputCenterToLeftAnimation = animateElement(
+            output,
+            outputCenterToLeft,
+            outputCenterToLeftTiming
+        )
 
-        outputCenterToLeft.finished.then(() => {
-            output.classList.replace('f-col', 'd-hidden')
-            document
-                .querySelector('#fibonacci-form')
-                .classList.replace('d-hidden', 'f-row')
+        outputCenterToLeftAnimation.finished.then(() => {
+            changeClass(output, 'f-col', 'd-hidden')
+            changeClass(
+                document.querySelector('#fibonacci-form'),
+                'd-hidden',
+                'f-row'
+            )
 
-            let formLeftToCenter = animateFormLeftToCenter(
-                document.querySelector('#fibonacci-form')
+            animateElement(
+                document.querySelector('#fibonacci-form'),
+                formLeftToCenter,
+                formLeftToCenterTiming
             )
         })
     })

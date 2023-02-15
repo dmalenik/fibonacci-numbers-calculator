@@ -1,6 +1,14 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-import animateFormCenterToLeft from '../assets/animations/animateFormCenterToLeft.js'
-import animateOutputLeftToCenter from '../assets/animations/animateOutputLeftToCenter.js'
+import changeClass from '../logic/changeClass.js'
+import animateElement from '../logic/animateElement.js'
+import {
+    formCenterToLeft,
+    formCenterToLeftTiming,
+} from '../assets/animations/formCenterToLeft.js'
+import {
+    outputLeftToCenter,
+    outputLeftToCenterTiming,
+} from '../assets/animations/outputLeftToCenter.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -38,13 +46,15 @@ const fibonacciNumbersForm = () => {
     send.innerText = 'Send'
 
     send.addEventListener('click', (event) => {
-        let formCenterToLeft = animateFormCenterToLeft(form)
+        let formCenterToLeftAnimation = animateElement(
+            form,
+            formCenterToLeft,
+            formCenterToLeftTiming
+        )
 
-        formCenterToLeft.finished.then(() => {
-            form.classList.replace('f-row', 'd-hidden')
-            document
-                .querySelector('#output')
-                .classList.replace('d-hidden', 'f-col')
+        formCenterToLeftAnimation.finished.then(() => {
+            changeClass(form, 'f-row', 'd-hidden')
+            changeClass(document.querySelector('#output'), 'd-hidden', 'f-col')
 
             let sequenceNumber = Number(input.getAttribute('value'))
             let fibonacciNumber = calcFibonacciNum(sequenceNumber)
@@ -53,8 +63,10 @@ const fibonacciNumbersForm = () => {
                 '#output h2'
             ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
 
-            let outputLeftToCenter = animateOutputLeftToCenter(
-                document.querySelector('#output')
+            animateElement(
+                document.querySelector('#output'),
+                outputLeftToCenter,
+                outputLeftToCenterTiming
             )
         })
     })
