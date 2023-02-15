@@ -10,6 +10,7 @@ import {
     outputLeftToCenter,
     outputLeftToCenterTiming,
 } from '../assets/animations/outputLeftToCenter.js'
+import displayFibonacciNumber from '../logic/displayFibonacciNumber.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -62,14 +63,11 @@ const fibonacciNumbersForm = () => {
                     'f-col'
                 )
             )
-
-            let sequenceNumber = Number(input.getAttribute('value'))
-            let fibonacciNumber = calcFibonacciNum(sequenceNumber)
-
-            document.querySelector(
-                '#output h2'
-            ).innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
-
+            displayFibonacciNumber(
+                Number(input.getAttribute('value')),
+                calcFibonacciNum,
+                document.querySelector('#output h2')
+            )
             animateElement(
                 document.querySelector('#output'),
                 outputLeftToCenter,
