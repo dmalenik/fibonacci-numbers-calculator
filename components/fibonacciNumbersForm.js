@@ -1,6 +1,5 @@
 import calcFibonacciNum from '../logic/calcFibonacciNum.js'
 import changeClass from '../logic/changeClass.js'
-import replaceElements from '../logic/replaceElements.js'
 import animateElement from '../logic/animateElement.js'
 import {
     formCenterToLeft,
@@ -55,14 +54,8 @@ const fibonacciNumbersForm = () => {
         )
 
         formCenterToLeftAnimation.finished.then(() => {
-            replaceElements(
-                changeClass(form, 'f-row', 'd-hidden'),
-                changeClass(
-                    document.querySelector('#output'),
-                    'd-hidden',
-                    'f-col'
-                )
-            )
+            changeClass(form, 'f-row', 'd-hidden')
+            changeClass(document.querySelector('#output'), 'd-hidden', 'f-col')
             displayFibonacciNumber(
                 Number(input.getAttribute('value')),
                 calcFibonacciNum,
