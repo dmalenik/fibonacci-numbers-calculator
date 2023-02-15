@@ -1,7 +1,7 @@
 const outputCenterToLeft = [
     {
         position: 'absolute',
-        left: '28vw',
+        left: '25vw',
     },
     {
         position: 'absolute',

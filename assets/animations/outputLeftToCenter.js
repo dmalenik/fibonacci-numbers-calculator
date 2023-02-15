@@ -5,7 +5,7 @@ const outputLeftToCenter = [
     },
     {
         position: 'absolute',
-        left: '28vw',
+        left: '25vw',
     },
 ]
 const outputLeftToCenterTiming = {
