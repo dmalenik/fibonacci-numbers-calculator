@@ -17,9 +17,7 @@ const styles = [
     '../assets/styles/form.css',
 ]
 
-for (let style of styles) {
-    createCSSLink(style)
-}
+styles.forEach((style) => createCSSLink(style))
 
 document
     .querySelector('.container')
