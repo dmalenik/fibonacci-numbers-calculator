@@ -1,11 +1,6 @@
 import fibonacciNumbersForm from '../components/fibonacciNumbersForm.js'
 import fibonacciNumberOutput from '../components/fibonacciNumberOutput.js'
-
-import normalize from '../assets/styles/normalize.css' assert { type: 'css' }
-import global from '../assets/styles/global.css' assert { type: 'css' }
-import utilities from '../assets/styles/utilities.css' assert { type: 'css' }
-import container from '../assets/styles/container.css' assert { type: 'css' }
-import form from '../assets/styles/form.css' assert { type: 'css' }
+import createCSSLink from '../logic/createCSSLink.js'
 
 // | PAGE SECTIONS
 
@@ -14,7 +9,11 @@ document.querySelector('.container').appendChild(fibonacciNumberOutput())
 
 // | STYLES
 
-document.adoptedStyleSheets = [normalize, global, utilities, container, form]
+createCSSLink('../assets/styles/normalize.css')
+createCSSLink('../assets/styles/global.css')
+createCSSLink('../assets/styles/utilities.css')
+createCSSLink('../assets/styles/container.css')
+createCSSLink('../assets/styles/form.css')
 
 document
     .querySelector('.container')
