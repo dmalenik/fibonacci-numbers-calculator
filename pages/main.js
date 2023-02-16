@@ -9,11 +9,17 @@ document.querySelector('.container').appendChild(fibonacciNumberOutput())
 
 // | STYLES
 
-createCSSLink('../assets/styles/normalize.css')
-createCSSLink('../assets/styles/global.css')
-createCSSLink('../assets/styles/utilities.css')
-createCSSLink('../assets/styles/container.css')
-createCSSLink('../assets/styles/form.css')
+const styles = [
+    '../assets/styles/normalize.css',
+    '../assets/styles/global.css',
+    '../assets/styles/utilities.css',
+    '../assets/styles/container.css',
+    '../assets/styles/form.css',
+]
+
+for (let style of styles) {
+    createCSSLink(style)
+}
 
 document
     .querySelector('.container')
