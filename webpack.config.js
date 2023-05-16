@@ -7,6 +7,9 @@ module.exports = {
     index: './src/index.js',
   },
   devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Fibonacci Numbers Generator'
@@ -24,5 +27,8 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  }
+  },
+  optimization: {
+    runtimeChunk: 'single',
+  },
 };

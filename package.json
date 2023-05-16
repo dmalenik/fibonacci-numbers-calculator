@@ -5,6 +5,7 @@
   "private": "true",
   "scripts": {
     "test": "jest",
+    "start": "webpack serve --open",
     "build": "webpack"
   },
   "repository": {
@@ -36,7 +37,8 @@
     "prettier": "^2.8.2",
     "style-loader": "^3.3.2",
     "webpack": "^5.82.1",
-    "webpack-cli": "^5.1.1"
+    "webpack-cli": "^5.1.1",
+    "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {}
 }
