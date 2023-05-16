@@ -30,6 +30,8 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.26.0",
     "jest": "^25.5.4",
-    "prettier": "^2.8.2"
+    "prettier": "^2.8.2",
+    "webpack": "^5.82.1",
+    "webpack-cli": "^5.1.1"
   }
 }
