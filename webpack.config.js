@@ -29,6 +29,14 @@ module.exports = {
     ],
   },
   optimization: {
+    moduleIds: 'deterministic',
     runtimeChunk: 'single',
+    splitChunks: {
+      vendor: {
+        test: /[\\/]node_modules[\\/]/,
+        name: 'vendors',
+        chunks: 'all',
+      },
+    },
   },
 };
