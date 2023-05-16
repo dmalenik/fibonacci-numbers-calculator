@@ -2,7 +2,7 @@
   "name": "fibonacci-numbers-generator",
   "version": "1.0.0",
   "description": "generates Fibonacci numbers up to the specified limit",
-  "main": "./pages/main.html",
+  "private": "true",
   "scripts": {
     "test": "jest"
   },
