@@ -4,7 +4,8 @@
   "description": "generates Fibonacci numbers up to the specified limit",
   "private": "true",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
