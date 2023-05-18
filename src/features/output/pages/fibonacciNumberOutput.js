@@ -1,13 +1,13 @@
-import animateElement from '../logic/animateElement.js'
+import animateElement from '../../logic/animateElement.js'
 import {
     outputCenterToLeft,
     outputCenterToLeftTiming,
-} from '../assets/animations/outputCenterToLeft.js'
+} from './outputCenterToLeft.js'
 import {
     formLeftToCenter,
     formLeftToCenterTiming,
-} from '../assets/animations/formLeftToCenter.js'
-import changeClass from '../logic/changeClass.js'
+} from '../inputs/formLeftToCenter.js'
+import changeClass from '../../logic/changeClass.js'
 
 const fibonacciNumberOutput = () => {
     const output = document.createElement('section')
