@@ -1,15 +1,15 @@
-import calcFibonacciNum from '../logic/calcFibonacciNum.js'
-import changeClass from '../logic/changeClass.js'
-import animateElement from '../logic/animateElement.js'
+import calcFibonacciNum from '../../logic/calcFibonacciNum.js'
+import changeClass from '../../logic/changeClass.js'
+import animateElement from '../../logic/animateElement.js'
 import {
     formCenterToLeft,
     formCenterToLeftTiming,
-} from '../assets/animations/formCenterToLeft.js'
+} from '../../../animations/formCenterToLeft.js'
 import {
     outputLeftToCenter,
     outputLeftToCenterTiming,
-} from '../assets/animations/outputLeftToCenter.js'
-import displayFibonacciNumber from '../logic/displayFibonacciNumber.js'
+} from '../../../animations/outputLeftToCenter.js'
+import displayFibonacciNumber from '../../logic/displayFibonacciNumber.js'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
