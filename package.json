@@ -6,7 +6,9 @@
     "scripts": {
         "test": "jest",
         "start": "webpack serve --open --config webpack.dev.js",
-        "build": "webpack --config webpack.prod.js"
+        "build": "webpack --config webpack.prod.js",
+        "write": "npx prettier --write .",
+        "check": "npx prettier --check ."
     },
     "repository": {
         "type": "git",
