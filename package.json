@@ -6,8 +6,9 @@
     "scripts": {
         "start": "webpack serve --open --config webpack.dev.js",
         "test": "jest",
-        "check": "npx prettier --check .",
-        "write": "npx prettier --write .",
+        "lint": "npx eslint ./src",
+        "check": "npx prettier --check ./src",
+        "format": "npx prettier --write ./src",
         "build": "webpack --config webpack.prod.js"
     },
     "repository": {
