@@ -1,5 +1,5 @@
 const displayFibonacciNumber = (sequenceNumber, handler, elem) => {
-    let fibonacciNumber = handler(sequenceNumber)
+    const fibonacciNumber = handler(sequenceNumber)
 
     elem.innerText = `The Fibonacci number at the sequence number ${sequenceNumber} is: ${fibonacciNumber}`
 

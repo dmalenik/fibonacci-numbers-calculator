@@ -1,4 +1,6 @@
-import calcFibonacciNum from '../logic/calcFibonacciNum'
+/* global describe, test, expect */
+/* eslint no-undef: "error" */
+import calcFibonacciNum from '../services/calcFibonacciNum'
 
 describe('test calcFibonacciNum function', () => {
     test('5th Fibonacci number is 5', () => {
