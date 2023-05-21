@@ -30,6 +30,7 @@
     "devDependencies": {
         "@babel/core": "^7.21.8",
         "@babel/preset-env": "^7.20.2",
+        "babel-cli": "^6.26.0",
         "babel-jest": "^29.4.1",
         "css-loader": "^6.7.3",
         "eslint": "^8.31.0",
