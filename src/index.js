@@ -1,10 +1,9 @@
-import fibonacciNumbersForm from './components/fibonacciNumberOutput.js'
-import fibonacciNumberOutput from './components/fibonacciNumbersForm.js'
+import fibonacciNumbersForm from './features/input/components/fibonacciNumbersForm'
+import fibonacciNumberOutput from './features/output/components/fibonacciNumberOutput'
 import './assets/styles/normalize.css'
-import './assets/styles/global.css'
+import './app.css'
 import './assets/styles/utilities.css'
-import './assets/styles/container.css'
-import './assets/styles/form.css'
+import './features/input/components/form.css'
 
 document.body.classList.add('f-col', 'f-x-center', 'f-y-center')
 
@@ -12,7 +11,7 @@ let form = fibonacciNumbersForm()
 document.body.appendChild(form)
 
 if (module.hot) {
-    module.hot.accept('./components/fibonacciNumbersForm.js', function () {
+    module.hot.accept('./components/fibonacciNumbersForm.js', () => {
         console.log('Accepting the updated fibonacciNumbersForm')
         document.body.removeChild(form)
         form = fibonacciNumbersForm()
@@ -24,7 +23,7 @@ let output = fibonacciNumberOutput()
 document.body.appendChild(output)
 
 if (module.hot) {
-    module.hot.accept('./components/fibonacciNumberOutput.js', function () {
+    module.hot.accept('./components/fibonacciNumberOutput.js', () => {
         console.log('Accepting the updated fibonacciNumberOutput')
         document.body.removeChild(output)
         output = fibonacciNumberOutput()
