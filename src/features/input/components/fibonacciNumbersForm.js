@@ -1,15 +1,15 @@
-import calcFibonacciNum from '../../logic/calcFibonacciNum.js'
-import changeClass from '../../logic/changeClass.js'
-import animateElement from '../../logic/animateElement.js'
+import calcFibonacciNum from '../services/calcFibonacciNum'
+import changeClass from '../../../services/changeClass'
+import animateElement from '../../../services/animateElement'
 import {
     formCenterToLeft,
     formCenterToLeftTiming,
-} from '../../../animations/formCenterToLeft.js'
+} from '../animations/formCenterToLeft'
 import {
     outputLeftToCenter,
     outputLeftToCenterTiming,
-} from '../../../animations/outputLeftToCenter.js'
-import displayFibonacciNumber from '../../logic/displayFibonacciNumber.js'
+} from '../../output/animations/outputLeftToCenter'
+import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
 
 const fibonacciNumbersForm = () => {
     const form = document.createElement('form')
@@ -46,8 +46,8 @@ const fibonacciNumbersForm = () => {
 
     send.innerText = 'Send'
 
-    send.addEventListener('click', (event) => {
-        let formCenterToLeftAnimation = animateElement(
+    send.addEventListener('click', () => {
+        const formCenterToLeftAnimation = animateElement(
             form,
             formCenterToLeft,
             formCenterToLeftTiming
