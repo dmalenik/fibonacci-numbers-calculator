@@ -11,7 +11,7 @@ let form = fibonacciNumbersForm()
 document.body.appendChild(form)
 
 if (module.hot) {
-    module.hot.accept('./components/fibonacciNumbersForm.js', () => {
+    module.hot.accept('./features/input/components/fibonacciNumbersForm.js', () => {
         console.log('Accepting the updated fibonacciNumbersForm')
         document.body.removeChild(form)
         form = fibonacciNumbersForm()
@@ -23,7 +23,7 @@ let output = fibonacciNumberOutput()
 document.body.appendChild(output)
 
 if (module.hot) {
-    module.hot.accept('./components/fibonacciNumberOutput.js', () => {
+    module.hot.accept('./features/input/components/fibonacciNumbersForm.js', () => {
         console.log('Accepting the updated fibonacciNumberOutput')
         document.body.removeChild(output)
         output = fibonacciNumberOutput()
