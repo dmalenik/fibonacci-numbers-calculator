@@ -10,28 +10,27 @@ import {
     outputLeftToCenterTiming,
 } from '../../output/animations/outputLeftToCenter'
 import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
+import './form.css'
 
-const fibonacciNumbersForm = () => {
-    const form = document.createElement('form')
+const Form = () => {
+    const section = document.createElement('form')
 
-    form.setAttribute('id', 'fibonacci-form')
-    form.setAttribute('method', '')
-    form.setAttribute('action', '')
-
-    form.classList.add('f-row', 'f-col-gap')
+    section.setAttribute('id', 'fibonacci-form')
+    section.setAttribute('method', '')
+    section.setAttribute('action', '')
+    section.classList.add('f-row', 'f-col-gap')
 
     const label = document.createElement('label')
 
-    label.setAttribute('for', 'fibonacci-numbers')
-
+    label.setAttribute('for', 'fibonacci-number')
     label.innerText =
-        'Type a sequence number to see a Fibonacci number within a specific order:'
+        'Type a sequence number to take a Fibonacci number from a specific order:'
 
     const input = document.createElement('input')
 
-    input.setAttribute('id', 'fibonacci-numbers')
+    input.setAttribute('id', 'input-number')
     input.setAttribute('type', 'number')
-    input.setAttribute('name', 'fibonacci-numbers')
+    input.setAttribute('name', 'input-number')
     input.setAttribute('min', 0)
 
     input.addEventListener('change', (event) =>
@@ -48,13 +47,13 @@ const fibonacciNumbersForm = () => {
 
     send.addEventListener('click', () => {
         const formCenterToLeftAnimation = animateElement(
-            form,
+            section,
             formCenterToLeft,
             formCenterToLeftTiming
         )
 
         formCenterToLeftAnimation.finished.then(() => {
-            changeClass(form, 'f-row', 'd-hidden')
+            changeClass(section, 'f-row', 'd-hidden')
             changeClass(document.querySelector('#output'), 'd-hidden', 'f-col')
             displayFibonacciNumber(
                 Number(input.getAttribute('value')),
@@ -69,11 +68,11 @@ const fibonacciNumbersForm = () => {
         })
     })
 
-    form.appendChild(label)
-    form.appendChild(input)
-    form.appendChild(send)
+    section.appendChild(label)
+    section.appendChild(input)
+    section.appendChild(send)
 
-    return form
+    return section
 }
 
-export default fibonacciNumbersForm
+export default Form
