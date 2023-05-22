@@ -24,7 +24,6 @@ const fibonacciNumberOutput = () => {
     tryAgainBtn.setAttribute('id', 'again')
     tryAgainBtn.setAttribute('type', 'button')
     tryAgainBtn.innerText = 'Try again'
-
     tryAgainBtn.addEventListener('click', () => {
         const outputCenterToLeftAnimation = animateElement(
             section,
