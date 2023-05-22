@@ -10,11 +10,10 @@ import {
 import changeClass from '../../../services/changeClass'
 
 const fibonacciNumberOutput = () => {
-    const output = document.createElement('section')
+    const section = document.createElement('section')
 
-    output.setAttribute('id', 'output')
-
-    output.classList.add('d-hidden', 'f-y-center', 'f-x-center')
+    section.setAttribute('id', 'output')
+    section.classList.add('d-hidden', 'f-y-center', 'f-x-center')
 
     const heading = document.createElement('h2')
 
@@ -24,18 +23,17 @@ const fibonacciNumberOutput = () => {
 
     tryAgainBtn.setAttribute('id', 'again')
     tryAgainBtn.setAttribute('type', 'button')
-
     tryAgainBtn.innerText = 'Try again'
 
     tryAgainBtn.addEventListener('click', () => {
         const outputCenterToLeftAnimation = animateElement(
-            output,
+            section,
             outputCenterToLeft,
             outputCenterToLeftTiming
         )
 
         outputCenterToLeftAnimation.finished.then(() => {
-            changeClass(output, 'f-col', 'd-hidden')
+            changeClass(section, 'f-col', 'd-hidden')
             changeClass(
                 document.querySelector('#fibonacci-form'),
                 'd-hidden',
@@ -49,10 +47,10 @@ const fibonacciNumberOutput = () => {
         })
     })
 
-    output.appendChild(heading)
-    output.appendChild(tryAgainBtn)
+    section.appendChild(heading)
+    section.appendChild(tryAgainBtn)
 
-    return output
+    return section
 }
 
 export default fibonacciNumberOutput
