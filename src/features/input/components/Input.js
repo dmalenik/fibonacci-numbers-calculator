@@ -1,4 +1,5 @@
 import Form from '../elements/Form'
+import Label from '../elements/Label'
 import calcFibonacciNum from '../services/calcFibonacciNum'
 import changeClass from '../../../utils/changeClass'
 import animateElement from '../../../services/animateElement'
@@ -15,11 +16,7 @@ import './input.css'
 
 const Input = () => {
     const section = Form()
-    const label = document.createElement('label')
-
-    label.setAttribute('for', 'fibonacci-number')
-    label.innerText =
-        'Type a sequence number to take a Fibonacci number from a specific order:'
+    const label = Label()
 
     const input = document.createElement('input')
 
