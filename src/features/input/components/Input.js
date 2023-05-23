@@ -10,7 +10,7 @@ import {
     outputLeftToCenterTiming,
 } from '../../output/animations/outputLeftToCenter'
 import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
-import './form.css'
+import './input.css'
 
 const Input = () => {
     const section = document.createElement('form')
