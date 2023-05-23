@@ -12,7 +12,7 @@ import {
 import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
 import './form.css'
 
-const Form = () => {
+const Input = () => {
     const section = document.createElement('form')
 
     section.setAttribute('id', 'fibonacci-form')
@@ -75,4 +75,4 @@ const Form = () => {
     return section
 }
 
-export default Form
+export default Input

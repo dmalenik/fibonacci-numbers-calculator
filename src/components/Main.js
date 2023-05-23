@@ -1,4 +1,4 @@
-import Form from '../features/input/components/Form'
+import Input from '../features/input/components/Input'
 import fibonacciNumberOutput from '../features/output/components/fibonacciNumberOutput'
 
 const Main = () => {
@@ -11,15 +11,15 @@ const Main = () => {
     heading.innerText = 'Main section'
     section.appendChild(heading)
 
-    let form = Form()
-    section.appendChild(form)
+    let input = Input()
+    section.appendChild(input)
 
     if (module.hot) {
-        module.hot.accept('../features/input/components/Form.js', () => {
+        module.hot.accept('../features/input/components/Input.js', () => {
             console.log('Accepting the updated fibonacciNumbersForm')
-            section.removeChild(form)
-            form = Form()
-            section.appendChild(form)
+            section.removeChild(input)
+            input = Input()
+            section.appendChild(input)
         })
     }
 
