@@ -1,3 +1,4 @@
+import Form from '../elements/Form'
 import calcFibonacciNum from '../services/calcFibonacciNum'
 import changeClass from '../../../utils/changeClass'
 import animateElement from '../../../services/animateElement'
@@ -13,13 +14,7 @@ import displayFibonacciNumber from '../../output/services/displayFibonacciNumber
 import './input.css'
 
 const Input = () => {
-    const section = document.createElement('form')
-
-    section.setAttribute('id', 'fibonacci-form')
-    section.setAttribute('method', '')
-    section.setAttribute('action', '')
-    section.classList.add('f-row', 'f-col-gap')
-
+    const section = Form()
     const label = document.createElement('label')
 
     label.setAttribute('for', 'fibonacci-number')
