@@ -1,24 +1,18 @@
 import animateElement from '../../../services/animateElement'
-import {
-    formCenterToLeft,
-    formCenterToLeftTiming,
-} from '../animations/formCenterToLeft'
+import provider from '../animations/provider.json'
 import changeClass from '../../../utils/changeClass'
 import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
-import {
-    outputLeftToCenter,
-    outputLeftToCenterTiming,
-} from '../../output/animations/outputLeftToCenter'
+import output from '../../output/animations/output.json'
 
 const provideFibonacciNum = () => {
-    const formCenterToLeftAnimation = animateElement(
+    const providerCenterToLeftAnimation = animateElement(
         document.querySelector('#fibonacci-form'),
-        formCenterToLeft,
-        formCenterToLeftTiming
+        provider.centerToLeft.animations,
+        provider.centerToLeft.time
     )
 
-    formCenterToLeftAnimation.finished.then(() => {
+    providerCenterToLeftAnimation.finished.then(() => {
         changeClass(
             document.querySelector('#fibonacci-form'),
             'f-row',
@@ -34,8 +28,8 @@ const provideFibonacciNum = () => {
         )
         animateElement(
             document.querySelector('#output'),
-            outputLeftToCenter,
-            outputLeftToCenterTiming
+            output.leftToCenter.animations,
+            output.leftToCenter.time
         )
     })
 }
