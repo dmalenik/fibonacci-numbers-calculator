@@ -13,6 +13,9 @@
             "error",
             {
                 "js": "never"
+            },
+            {
+              "json": "always"
             }
         ],
         "import/no-extraneous-dependencies": ["off"],
