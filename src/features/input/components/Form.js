@@ -1,5 +1,5 @@
 import calcFibonacciNum from '../services/calcFibonacciNum'
-import changeClass from '../../../services/changeClass'
+import changeClass from '../../../utils/changeClass'
 import animateElement from '../../../services/animateElement'
 import {
     formCenterToLeft,

@@ -7,7 +7,7 @@ import {
     formLeftToCenter,
     formLeftToCenterTiming,
 } from '../../input/animations/formLeftToCenter'
-import changeClass from '../../../services/changeClass'
+import changeClass from '../../../utils/changeClass'
 
 const fibonacciNumberOutput = () => {
     const section = document.createElement('section')
