@@ -1,6 +1,7 @@
 import Form from '../elements/Form'
 import Label from '../elements/Label'
 import Input from '../elements/Input'
+import Button from '../elements/Button'
 import calcFibonacciNum from '../services/calcFibonacciNum'
 import changeClass from '../../../utils/changeClass'
 import animateElement from '../../../services/animateElement'
@@ -18,19 +19,18 @@ import './input.css'
 const Provider = () => {
     const section = Form()
     const label = Label()
+
+    section.appendChild(label)
+
     const input = Input()
 
     input.addEventListener('change', (event) =>
         event.target.setAttribute('value', event.target.value)
     )
 
-    const send = document.createElement('button')
+    section.appendChild(input)
 
-    send.setAttribute('id', 'fibonacci-button')
-    send.setAttribute('type', 'button')
-    send.setAttribute('form', 'fibonacci-form')
-
-    send.innerText = 'Send'
+    const send = Button()
 
     send.addEventListener('click', () => {
         const formCenterToLeftAnimation = animateElement(
@@ -55,8 +55,6 @@ const Provider = () => {
         })
     })
 
-    section.appendChild(label)
-    section.appendChild(input)
     section.appendChild(send)
 
     return section
