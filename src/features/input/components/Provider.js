@@ -2,6 +2,7 @@ import Form from '../elements/Form'
 import Label from '../elements/Label'
 import Input from '../elements/Input'
 import Button from '../elements/Button'
+import setInputValue from '../services/setInputValue'
 import calcFibonacciNum from '../services/calcFibonacciNum'
 import changeClass from '../../../utils/changeClass'
 import animateElement from '../../../services/animateElement'
@@ -24,9 +25,7 @@ const Provider = () => {
 
     const input = Input()
 
-    input.addEventListener('change', (event) =>
-        event.target.setAttribute('value', event.target.value)
-    )
+    input.addEventListener('change', setInputValue)
 
     section.appendChild(input)
 
