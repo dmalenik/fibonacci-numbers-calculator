@@ -4,7 +4,7 @@ import Input from '../elements/Input'
 import Button from '../elements/Button'
 import setInputValue from '../services/setInputValue'
 import provideFibonacciNum from '../services/provideFibonacciNum'
-import './input.css'
+import './provider.css'
 
 const Provider = () => {
     const section = Form()
