@@ -1,12 +1,12 @@
 const Input = () => {
-  const element = document.createElement('input')
+    const element = document.createElement('input')
 
-  element.setAttribute('id', 'input-number')
-  element.setAttribute('type', 'number')
-  element.setAttribute('name', 'input-number')
-  element.setAttribute('min', 0)
+    element.setAttribute('id', 'input-number')
+    element.setAttribute('type', 'number')
+    element.setAttribute('name', 'input-number')
+    element.setAttribute('min', 0)
 
-  return element
+    return element
 }
 
 export default Input

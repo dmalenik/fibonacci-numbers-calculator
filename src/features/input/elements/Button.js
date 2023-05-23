@@ -1,5 +1,5 @@
 const Button = () => {
-  const element = document.createElement('button')
+    const element = document.createElement('button')
 
     element.setAttribute('id', 'fibonacci-button')
     element.setAttribute('type', 'button')
