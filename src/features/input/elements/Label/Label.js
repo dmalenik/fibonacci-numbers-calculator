@@ -1,5 +1,5 @@
 import data from './label.json'
-import createCustomizedElement from '../utils/createCustomizedElement'
+import createCustomizedElement from '../../utils/createCustomizedElement'
 
 const Label = createCustomizedElement(data.name, data.attrs, data.children)
 

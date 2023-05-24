@@ -1,5 +1,5 @@
 import data from './button.json'
-import createCustomizedElement from '../utils/createCustomizedElement'
+import createCustomizedElement from '../../utils/createCustomizedElement'
 
 const Button = createCustomizedElement(data.name, data.attrs, data.children)
 
