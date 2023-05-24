@@ -1,6 +1,6 @@
 import animateElement from '../../../services/animateElement'
-import output from '../animations/output.json'
-import provider from '../../input/animations/provider.json'
+import outputAnimations from '../animations/output.json'
+import providerAnimations from '../../input/components/provider.json'
 import changeClass from '../../../utils/changeClass'
 
 const fibonacciNumberOutput = () => {
@@ -21,8 +21,8 @@ const fibonacciNumberOutput = () => {
     tryAgainBtn.addEventListener('click', () => {
         const outputCenterToLeftAnimation = animateElement(
             section,
-            output.centerToLeft.animations,
-            output.centerToLeft.time
+            outputAnimations.centerToLeft.animations,
+            outputAnimations.centerToLeft.time
         )
 
         outputCenterToLeftAnimation.finished.then(() => {
@@ -34,8 +34,8 @@ const fibonacciNumberOutput = () => {
             )
             animateElement(
                 document.querySelector('#fibonacci-form'),
-                provider.leftToCenter.animations,
-                provider.leftToCenter.time
+                providerAnimations.leftToCenter.animations,
+                providerAnimations.leftToCenter.time
             )
         })
     })

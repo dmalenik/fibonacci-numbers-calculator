@@ -1,0 +1,10 @@
+{
+  "name": "input",
+  "attrs": {
+    "id": "input-number",
+    "type": "number",
+    "name": "input-number",
+    "min": 0
+  },
+  "children": ""
+}
