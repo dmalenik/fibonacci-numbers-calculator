@@ -7,16 +7,16 @@ import provideFibonacciNum from '../services/provideFibonacciNum'
 import '../assets/styles/provider.css'
 
 const Provider = () => {
-    const section = Form()
+    const section = Form
 
-    const label = Label()
+    const label = Label
     section.appendChild(label)
 
-    const input = Input()
+    const input = Input
     input.addEventListener('change', setInputValue)
     section.appendChild(input)
 
-    const send = Button()
+    const send = Button
     send.addEventListener('click', provideFibonacciNum)
     section.appendChild(send)
 
