@@ -1,9 +1,9 @@
 {
-  "name": "button",
-  "attrs": {
-    "id": "fibonacci-button",
-    "type": "button",
-    "form": "fibonacci-form"
-  },
-  "children": "Send"
+    "name": "button",
+    "attrs": {
+        "id": "fibonacci-button",
+        "type": "button",
+        "form": "fibonacci-form"
+    },
+    "children": "Send"
 }

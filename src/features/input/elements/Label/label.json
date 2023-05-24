@@ -1,7 +1,7 @@
 {
-  "name": "label",
-  "attrs": {
-    "for": "fibonacci-number"
-  },
-  "children": "Type a sequence number to take a Fibonacci number from a specific order:"
+    "name": "label",
+    "attrs": {
+        "for": "fibonacci-number"
+    },
+    "children": "Type a sequence number to take a Fibonacci number from a specific order:"
 }
