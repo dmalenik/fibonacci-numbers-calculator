@@ -1,12 +1,6 @@
-const Input = () => {
-  const element = document.createElement('input')
+import data from './input.json'
+import createCustomizedElement from '../utils/createCustomizedElement' 
 
-  element.setAttribute('id', 'input-number')
-  element.setAttribute('type', 'number')
-  element.setAttribute('name', 'input-number')
-  element.setAttribute('min', 0)
-
-  return element
-}
+const Input = createCustomizedElement(data.name, data.attrs, data.children)
 
 export default Input

@@ -1,13 +1,6 @@
-const Form = () => {
-  const section = document.createElement('form')
+import createCustomizedElement from '../utils/createCustomizedElement'
+import data from './form.json'
 
-  section.setAttribute('id', 'fibonacci-form')
-  section.setAttribute('method', '')
-  section.setAttribute('action', '')
-
-  section.classList.add('f-row', 'f-col-gap')
-
-  return section
-}
+const Form = createCustomizedElement(data.name, data.attrs, data.children)
 
 export default Form

@@ -1,13 +1,6 @@
-const Button = () => {
-  const element = document.createElement('button')
+import data from './button.json'
+import createCustomizedElement from '../utils/createCustomizedElement'
 
-    element.setAttribute('id', 'fibonacci-button')
-    element.setAttribute('type', 'button')
-    element.setAttribute('form', 'fibonacci-form')
-
-    element.innerText = 'Send'
-
-    return element
-}
+const Button = createCustomizedElement(data.name, data.attrs, data.children)
 
 export default Button
