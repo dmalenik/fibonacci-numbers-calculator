@@ -1,7 +1,7 @@
-import animateElement from '../../../services/animateElement'
+import animateElement from '../../shared/services/animateElement'
 import providerAnimations from '../../shared/animations/Provider.animations.json'
 import changeClass from '../../../utils/changeClass'
-import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
+import displayFibonacciNumber from '../../shared/services/displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
 import outputAnimations from '../../shared/animations/output.json'
 
