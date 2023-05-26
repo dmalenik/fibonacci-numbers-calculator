@@ -4,7 +4,7 @@ import Input from '../elements/Input/Input'
 import Button from '../elements/Button/Button'
 import setInputValue from '../services/setInputValue'
 import provideFibonacciNum from '../services/provideFibonacciNum'
-import './provider.css'
+import './Provider.styles.css'
 
 const Provider = () => {
     Input.addEventListener('change', setInputValue)
