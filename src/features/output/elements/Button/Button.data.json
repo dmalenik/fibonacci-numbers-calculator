@@ -1,0 +1,8 @@
+{
+    "name": "button",
+    "attrs": {
+        "id": "again",
+        "type": "button"
+    },
+    "children": "Try again"
+}

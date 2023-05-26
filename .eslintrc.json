@@ -12,7 +12,8 @@
         "import/extensions": [
             "error",
             {
-                "js": "never"
+                "js": "never",
+                "json": "always"
             }
         ],
         "import/no-extraneous-dependencies": ["off"],
@@ -27,7 +28,7 @@
         "prefer-arrow-callback": ["error"],
         "prefer-const": ["error"],
         "consistent-return": ["error"],
-        "max-lines": ["warn", 100],
+        "max-lines": ["warn", 50],
         "max-params": ["warn", 3]
     },
     "overrides": [],
