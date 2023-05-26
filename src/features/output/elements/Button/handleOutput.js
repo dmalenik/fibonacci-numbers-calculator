@@ -3,7 +3,7 @@ import outputAnimations from '../../components/Output.animations.json'
 import changeClass from '../../../../utils/changeClass'
 import providerAnimations from '../../../input/components/Provider.animations.json'
 
-const returnInput = () => {
+const handleOutput = () => {
     animateElement(
         document.querySelector('#output'),
         outputAnimations.centerToLeft.animations,
@@ -23,4 +23,4 @@ const returnInput = () => {
     })
 }
 
-export default returnInput
+export default handleOutput
