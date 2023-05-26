@@ -1,5 +1,5 @@
 import Input from '../features/input/components/Provider'
-import fibonacciNumberOutput from '../features/output/components/fibonacciNumberOutput'
+import Output from '../features/output/components/Output'
 
 const Main = () => {
     const section = document.createElement('main')
@@ -23,16 +23,16 @@ const Main = () => {
         })
     }
 
-    let output = fibonacciNumberOutput()
+    let output = Output()
     section.appendChild(output)
 
     if (module.hot) {
         module.hot.accept(
-            '../features/output/components/fibonacciNumberOutput.js',
+            '../features/output/components/Output.js',
             () => {
-                console.log('Accepting the updated fibonacciNumberOutput')
+                console.log('Accepting the updated Output')
                 section.removeChild(output)
-                output = fibonacciNumberOutput()
+                output = Output()
                 section.appendChild(output)
             }
         )
