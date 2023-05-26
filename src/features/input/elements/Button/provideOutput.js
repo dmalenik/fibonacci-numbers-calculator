@@ -1,11 +1,11 @@
-import animateElement from './animateElement'
-import providerAnimations from '../../input/components/Provider.animations.json'
-import changeClass from '../../../utils/changeClass'
+import animateElement from '../../../shared/utils/animateElement'
+import providerAnimations from '../../components/Provider.animations.json'
+import changeClass from '../../../../utils/changeClass'
 import displayFibonacciNumber from './displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
-import outputAnimations from '../../output/components/Output.animations.json'
+import outputAnimations from '../../../output/components/Output.animations.json'
 
-const provideFibonacciNum = () => {
+const provideOutput = () => {
     const providerCenterToLeftAnimation = animateElement(
         document.querySelector('#fibonacci-form'),
         providerAnimations.centerToLeft.animations,
@@ -34,4 +34,4 @@ const provideFibonacciNum = () => {
     })
 }
 
-export default provideFibonacciNum
+export default provideOutput
