@@ -1,7 +1,7 @@
 import Section from '../elements/Section/Section'
 import Button from '../elements/Button/Button'
 import Heading2 from '../elements/Heading-2/Heading-2'
-import returnInput from '../../shared/services/returnInput'
+import returnInput from '../elements/Button/returnInput'
 
 const Output = () => {
     Button.addEventListener('click', returnInput)
