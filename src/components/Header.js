@@ -1,14 +1,10 @@
+import HeaderElement from '../elements/HeaderElement/HeaderElement'
+import H1 from '../elements/H1/H1'
+
 const Header = () => {
-    const section = document.createElement('header')
+    HeaderElement.appendChild(H1)
 
-    section.classList.add('header')
-
-    const greeting = document.createElement('h1')
-
-    greeting.innerText = 'Welcome to Fibonacci Numbers Calculator Page'
-    section.appendChild(greeting)
-
-    return section
+    return HeaderElement
 }
 
 export default Header
