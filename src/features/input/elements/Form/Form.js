@@ -1,5 +1,5 @@
 import createCustomizedElement from '../../utils/createCustomizedElement'
-import data from './form.json'
+import data from './Form.data.json'
 
 const Form = createCustomizedElement(data.name, data.attrs, data.children)
 
