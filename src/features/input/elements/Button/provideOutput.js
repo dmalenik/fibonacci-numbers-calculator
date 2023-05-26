@@ -6,13 +6,11 @@ import calcFibonacciNum from './calcFibonacciNum'
 import outputAnimations from '../../../output/components/Output.animations.json'
 
 const provideOutput = () => {
-    const providerCenterToLeftAnimation = animateElement(
+    animateElement(
         document.querySelector('#fibonacci-form'),
         providerAnimations.centerToLeft.animations,
         providerAnimations.centerToLeft.time
-    )
-
-    providerCenterToLeftAnimation.finished.then(() => {
+    ).finished.then(() => {
         changeClass(
             document.querySelector('#fibonacci-form'),
             'f-row',
