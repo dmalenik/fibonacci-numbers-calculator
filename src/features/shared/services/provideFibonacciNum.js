@@ -3,7 +3,7 @@ import providerAnimations from '../../input/components/Provider.animations.json'
 import changeClass from '../../../utils/changeClass'
 import displayFibonacciNumber from './displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
-import outputAnimations from '../../output/components/output.json'
+import outputAnimations from '../../output/components/Output.animations.json'
 
 const provideFibonacciNum = () => {
     const providerCenterToLeftAnimation = animateElement(
