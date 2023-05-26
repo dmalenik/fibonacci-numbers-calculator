@@ -1,7 +1,7 @@
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
-import './app.css'
+import './App.styles.css'
 
 const App = () => {
     const container = document.createElement('div')
