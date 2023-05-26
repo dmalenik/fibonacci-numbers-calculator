@@ -1,6 +1,6 @@
 import animateElement from '../../shared/services/animateElement'
-import outputAnimations from '../../shared/animations/output.json'
-import providerAnimations from '../../shared/animations/Provider.animations.json'
+import outputAnimations from './output.json'
+import providerAnimations from '../../input/components/Provider.animations.json'
 import changeClass from '../../../utils/changeClass'
 
 const fibonacciNumberOutput = () => {
