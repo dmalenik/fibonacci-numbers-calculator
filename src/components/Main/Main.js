@@ -11,7 +11,7 @@ const Main = () => {
 
     if (module.hot) {
         module.hot.accept('../../features/input/components/Provider.js', () => {
-            console.log('Accepting the updated fibonacciNumbersForm')
+            console.log('Accepting the updated Provider component')
             MainElement.removeChild(input)
             input = Input()
             MainElement.appendChild(input)
@@ -25,7 +25,7 @@ const Main = () => {
         module.hot.accept(
             '../../features/output/components/Output.js',
             () => {
-                console.log('Accepting the updated Output')
+                console.log('Accepting the updated Output component')
                 MainElement.removeChild(output)
                 output = Output()
                 MainElement.appendChild(output)

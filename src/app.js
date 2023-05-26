@@ -11,7 +11,7 @@ const App = () => {
 
     if (module.hot) {
         module.hot.accept('./components/Header/Header.js', () => {
-            console.log('Accepting the updated Home page')
+            console.log('Accepting the updated Header section')
             container.removeChild(header)
             header = Header()
             container.appendChild(header)
@@ -23,7 +23,7 @@ const App = () => {
 
     if (module.hot) {
         module.hot.accept('./components/Main/Main.js', () => {
-            console.log('Accepting the updated Home page')
+            console.log('Accepting the updated Main section')
             container.removeChild(main)
             main = Main()
             container.appendChild(main)
@@ -35,7 +35,7 @@ const App = () => {
 
     if (module.hot) {
         module.hot.accept('./components/Footer/Footer.js', () => {
-            console.log('Accepting the updated Home page')
+            console.log('Accepting the updated Footer section')
             container.removeChild(footer)
             footer = Footer()
             container.appendChild(footer)
