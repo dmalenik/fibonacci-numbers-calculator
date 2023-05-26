@@ -1,5 +1,5 @@
 import animateElement from '../../../services/animateElement'
-import providerAnimations from '../components/provider.json'
+import providerAnimations from '../components/Provider.animations.json'
 import changeClass from '../../../utils/changeClass'
 import displayFibonacciNumber from '../../output/services/displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
