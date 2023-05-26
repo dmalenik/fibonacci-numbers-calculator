@@ -5,7 +5,7 @@ import displayFibonacciNumber from './displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
 import outputAnimations from '../../../output/components/Output.animations.json'
 
-const provideOutput = () => {
+const handleInput = () => {
     animateElement(
         document.querySelector('#fibonacci-form'),
         providerAnimations.centerToLeft.animations,
@@ -32,4 +32,4 @@ const provideOutput = () => {
     })
 }
 
-export default provideOutput
+export default handleInput
