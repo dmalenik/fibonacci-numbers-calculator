@@ -6,8 +6,6 @@ import './App.styles.css'
 const App = () => {
     const container = document.createElement('div')
 
-    container.classList.add('app')
-
     let header = Header()
     container.appendChild(header)
 
