@@ -1,6 +1,6 @@
 import animateElement from '../../../shared/utils/animateElement'
 import outputAnimations from '../../components/Output.animations.json'
-import changeClass from '../../../../utils/changeClass'
+import changeClass from '../../../shared/utils/changeClass'
 import providerAnimations from '../../../input/components/Provider.animations.json'
 
 const handleOutput = () => {

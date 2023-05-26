@@ -1,9 +1,9 @@
 import Section from '../elements/Section/Section'
 import Button from '../elements/Button/Button'
-import Heading2 from '../elements/H2/Heading-2'
+import H2 from '../elements/H2/H2'
 
 const Output = () => {
-    Section.appendChild(Heading2)
+    Section.appendChild(H2)
     Section.appendChild(Button)
 
     return Section

@@ -10,7 +10,7 @@ const Main = () => {
     MainElement.appendChild(input)
 
     if (module.hot) {
-        module.hot.accept('../features/input/components/Provider.js', () => {
+        module.hot.accept('../../features/input/components/Provider.js', () => {
             console.log('Accepting the updated fibonacciNumbersForm')
             MainElement.removeChild(input)
             input = Input()
@@ -23,7 +23,7 @@ const Main = () => {
 
     if (module.hot) {
         module.hot.accept(
-            '../features/output/components/Output.js',
+            '../../features/output/components/Output.js',
             () => {
                 console.log('Accepting the updated Output')
                 MainElement.removeChild(output)

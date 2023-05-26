@@ -1,6 +1,6 @@
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import Header from './components/Header/Header'
+import Main from './components/Main/Main'
+import Footer from './components/Footer/Footer'
 import './app.css'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
     container.appendChild(header)
 
     if (module.hot) {
-        module.hot.accept('./components/Header.js', () => {
+        module.hot.accept('./components/Header/Header.js', () => {
             console.log('Accepting the updated Home page')
             container.removeChild(header)
             header = Header()
@@ -24,7 +24,7 @@ const App = () => {
     container.appendChild(main)
 
     if (module.hot) {
-        module.hot.accept('./components/Main.js', () => {
+        module.hot.accept('./components/Main/Main.js', () => {
             console.log('Accepting the updated Home page')
             container.removeChild(main)
             main = Main()
@@ -36,7 +36,7 @@ const App = () => {
     container.appendChild(footer)
 
     if (module.hot) {
-        module.hot.accept('./components/Footer.js', () => {
+        module.hot.accept('./components/Footer/Footer.js', () => {
             console.log('Accepting the updated Home page')
             container.removeChild(footer)
             footer = Footer()
