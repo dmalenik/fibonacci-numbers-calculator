@@ -1,7 +1,7 @@
 import animateElement from './animateElement'
-import outputAnimations from '../../output/components/Output.animations.json'
-import changeClass from '../../../utils/changeClass'
-import providerAnimations from '../../input/components/Provider.animations.json'
+import outputAnimations from '../../components/Output.animations.json'
+import changeClass from '../../../../utils/changeClass'
+import providerAnimations from '../../../input/components/Provider.animations.json'
 
 const returnInput = () => {
     const outputCenterToLeftAnimation = animateElement(
