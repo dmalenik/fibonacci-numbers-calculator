@@ -3,12 +3,12 @@ import Label from '../elements/Label/Label'
 import Input from '../elements/Input/Input'
 import setInputValue from '../elements/Input/setInputValue'
 import Button from '../elements/Button/Button'
-import provideFibonacciNum from '../elements/Button/provideFibonacciNum'
+import provideOutput from '../elements/Button/provideOutput'
 import './Provider.styles.css'
 
 const Provider = () => {
     Input.addEventListener('change', setInputValue)
-    Button.addEventListener('click', provideFibonacciNum)
+    Button.addEventListener('click', provideOutput)
 
     Form.appendChild(Label)
     Form.appendChild(Input)
