@@ -1,5 +1,5 @@
 import animateElement from '../../shared/services/animateElement'
-import outputAnimations from './output.json'
+import outputAnimations from './Output.animations.json'
 import providerAnimations from '../../input/components/Provider.animations.json'
 import changeClass from '../../../utils/changeClass'
 
