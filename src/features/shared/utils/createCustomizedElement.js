@@ -4,6 +4,7 @@ const createCustomizedElement = (name, attrs, children) => {
     Object.entries(attrs).forEach((attr) => {
         element.setAttribute(attr[0], attr[1])
     })
+
     element.innerText = children
 
     return element
