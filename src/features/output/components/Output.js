@@ -3,11 +3,10 @@ import outputAnimations from './Output.animations.json'
 import providerAnimations from '../../input/components/Provider.animations.json'
 import changeClass from '../../../utils/changeClass'
 
-const fibonacciNumberOutput = () => {
+const Output = () => {
     const section = document.createElement('section')
 
     section.setAttribute('id', 'output')
-    section.classList.add('d-hidden', 'f-y-center', 'f-x-center')
 
     const heading = document.createElement('h2')
 
@@ -46,4 +45,4 @@ const fibonacciNumberOutput = () => {
     return section
 }
 
-export default fibonacciNumberOutput
+export default Output
