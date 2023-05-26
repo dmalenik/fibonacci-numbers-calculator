@@ -22,15 +22,12 @@ const Main = () => {
     MainElement.appendChild(output)
 
     if (module.hot) {
-        module.hot.accept(
-            '../../features/output/components/Output.js',
-            () => {
-                console.log('Accepting the updated Output component')
-                MainElement.removeChild(output)
-                output = Output()
-                MainElement.appendChild(output)
-            }
-        )
+        module.hot.accept('../../features/output/components/Output.js', () => {
+            console.log('Accepting the updated Output component')
+            MainElement.removeChild(output)
+            output = Output()
+            MainElement.appendChild(output)
+        })
     }
 
     return MainElement
