@@ -29,7 +29,8 @@
         "prefer-const": ["error"],
         "consistent-return": ["error"],
         "max-lines": ["warn", 50],
-        "max-params": ["warn", 3]
+        "max-params": ["warn", 3],
+        "global-require": ["warn"]
     },
     "overrides": [],
     "parserOptions": {
