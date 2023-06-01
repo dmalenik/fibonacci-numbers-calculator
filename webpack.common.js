@@ -13,8 +13,27 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.css$/i,
-                use: ['style-loader', 'css-loader', 'postcss-loader'],
+                test: /\.css$|\.scss$/i,
+                use: [
+                  {
+                    loader: 'style-loader'
+                  }, 
+                  {
+                    loader: 'css-loader',
+                    options: {
+                      sourceMap: true,
+                    },
+                  }, 
+                  {
+                    loader: 'postcss-loader'
+                  }, 
+                  {
+                    loader: 'sass-loader',
+                    options: {
+                      sourceMap: true,
+                    },
+                  }
+                ],
             },
         ],
     },

@@ -44,6 +44,8 @@
         "postcss-cli": "^10.1.0",
         "postcss-loader": "^7.3.2",
         "prettier": "^2.8.2",
+        "sass": "^1.62.1",
+        "sass-loader": "^13.3.1",
         "style-loader": "^3.3.2",
         "webpack": "^5.82.1",
         "webpack-cli": "^5.1.1",
@@ -52,6 +54,6 @@
     },
     "dependencies": {},
     "browserslist": [
-      "defaults and supports es6-module"
+        "defaults and supports es6-module"
     ]
 }

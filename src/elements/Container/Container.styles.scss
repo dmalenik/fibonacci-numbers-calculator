@@ -1,5 +1,7 @@
-$app-color: blue;
+$app-color: orange;
+$app-text-color: yellow;
 
 .app {
     background-color: $app-color;
+    color: $app-text-color;
 }
