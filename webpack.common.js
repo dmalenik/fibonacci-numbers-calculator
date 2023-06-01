@@ -15,24 +15,29 @@ module.exports = {
             {
                 test: /\.css$|\.scss$/i,
                 use: [
-                  {
-                    loader: 'style-loader'
-                  }, 
-                  {
-                    loader: 'css-loader',
-                    options: {
-                      sourceMap: true,
+                    {
+                        loader: 'style-loader',
                     },
-                  }, 
-                  {
-                    loader: 'postcss-loader'
-                  }, 
-                  {
-                    loader: 'sass-loader',
-                    options: {
-                      sourceMap: true,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                        },
                     },
-                  }
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [['autoprefixer']],
+                            },
+                        },
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                        },
+                    },
                 ],
             },
         ],
