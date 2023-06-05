@@ -1,12 +1,12 @@
-import Section from '../elements/Section/Section'
-import Button from '../elements/Button/Button'
-import H2 from '../elements/H2/H2'
+import section from '../elements/section/section'
+import button from '../elements/button/button'
+import h2 from '../elements/h2/h2'
 
 const Output = () => {
-    Section.appendChild(H2)
-    Section.appendChild(Button)
+    section.appendChild(h2)
+    section.appendChild(button)
 
-    return Section
+    return section
 }
 
 export default Output

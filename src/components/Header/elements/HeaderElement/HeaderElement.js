@@ -1,6 +1,6 @@
 import createCustomizedElement from '../../../../utils/createCustomizedElement'
-import data from './HeaderElement.data.json'
+import data from './headerElement.data.json'
 
-const HeaderElement = createCustomizedElement(data)
+const headerElement = createCustomizedElement(data)
 
-export default HeaderElement
+export default headerElement

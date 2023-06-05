@@ -1,6 +1,6 @@
 import createCustomizedElement from '../../../../utils/createCustomizedElement'
-import data from './Section.data.json'
+import data from './section.data.json'
 
-const Section = createCustomizedElement(data)
+const section = createCustomizedElement(data)
 
-export default Section
+export default section

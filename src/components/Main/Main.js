@@ -1,36 +1,36 @@
-import MainElement from './elements/MainElement/MainElement'
-import H2 from './elements/H2/H2'
+import mainElement from './elements/mainElement/mainElement'
+import h2 from './elements/h2/h2'
 import Input from '../../features/input/components/Provider'
 import Output from '../../features/output/components/Output'
 
 const Main = () => {
-    MainElement.appendChild(H2)
+    mainElement.appendChild(h2)
 
     let input = Input()
-    MainElement.appendChild(input)
+    mainElement.appendChild(input)
 
     if (module.hot) {
         module.hot.accept('../../features/input/components/Provider.js', () => {
             console.log('Accepting the updated Provider component')
-            MainElement.removeChild(input)
+            mainElement.removeChild(input)
             input = Input()
-            MainElement.appendChild(input)
+            mainElement.appendChild(input)
         })
     }
 
     let output = Output()
-    MainElement.appendChild(output)
+    mainElement.appendChild(output)
 
     if (module.hot) {
         module.hot.accept('../../features/output/components/Output.js', () => {
             console.log('Accepting the updated Output component')
-            MainElement.removeChild(output)
+            mainElement.removeChild(output)
             output = Output()
-            MainElement.appendChild(output)
+            mainElement.appendChild(output)
         })
     }
 
-    return MainElement
+    return mainElement
 }
 
 export default Main

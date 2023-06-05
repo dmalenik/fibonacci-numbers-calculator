@@ -1,10 +1,10 @@
-import FooterElement from './elements/FooterElement/FooterElement'
-import H2 from './elements/H2/H2'
+import footerElement from './elements/footerElement/footerElement'
+import h2 from './elements/h2/h2'
 
 const Footer = () => {
-    FooterElement.appendChild(H2)
+    footerElement.appendChild(h2)
 
-    return FooterElement
+    return footerElement
 }
 
 export default Footer

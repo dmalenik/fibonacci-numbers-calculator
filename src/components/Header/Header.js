@@ -1,10 +1,10 @@
-import HeaderElement from './elements/HeaderElement/HeaderElement'
-import H1 from './elements/H1/H1'
+import headerElement from './elements/headerElement/headerElement'
+import h1 from './elements/h1/h1'
 
 const Header = () => {
-    HeaderElement.appendChild(H1)
+    headerElement.appendChild(h1)
 
-    return HeaderElement
+    return headerElement
 }
 
 export default Header

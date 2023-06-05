@@ -1,6 +1,6 @@
 import createCustomizedElement from '../../../../utils/createCustomizedElement'
-import data from './Form.data.json'
+import data from './form.data.json'
 
-const Form = createCustomizedElement(data)
+const form = createCustomizedElement(data)
 
-export default Form
+export default form

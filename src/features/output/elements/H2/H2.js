@@ -1,6 +1,6 @@
-import data from './H2.data.json'
+import data from './h2.data.json'
 import createCustomizedElement from '../../../../utils/createCustomizedElement'
 
-const Heading2 = createCustomizedElement(data)
+const h2 = createCustomizedElement(data)
 
-export default Heading2
+export default h2
