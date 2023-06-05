@@ -1,20 +1,20 @@
 import mainElement from './elements/mainElement/mainElement'
 import h2 from './elements/h2/h2'
-import Input from '../../features/input/components/Provider'
+import Provider from '../../features/input/components/Provider'
 import Output from '../../features/output/components/Output'
 
 const Main = () => {
     mainElement.appendChild(h2)
 
-    let input = Input()
-    mainElement.appendChild(input)
+    let provider = Provider()
+    mainElement.appendChild(provider)
 
     if (module.hot) {
         module.hot.accept('../../features/input/components/Provider.js', () => {
             console.log('Accepting the updated Provider component')
-            mainElement.removeChild(input)
-            input = Input()
-            mainElement.appendChild(input)
+            mainElement.removeChild(provider)
+            provider = Provider()
+            mainElement.appendChild(provider)
         })
     }
 
