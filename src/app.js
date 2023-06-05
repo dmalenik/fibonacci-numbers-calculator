@@ -1,46 +1,46 @@
-import Container from './elements/container/container'
+import container from './elements/container/container'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
 
 const App = () => {
     let header = Header()
-    Container.appendChild(header)
+    container.appendChild(header)
 
     if (module.hot) {
         module.hot.accept('./components/Header/Header.js', () => {
             console.log('Accepting the updated Header section')
-            Container.removeChild(header)
+            container.removeChild(header)
             header = Header()
-            Container.appendChild(header)
+            container.appendChild(header)
         })
     }
 
     let main = Main()
-    Container.appendChild(main)
+    container.appendChild(main)
 
     if (module.hot) {
         module.hot.accept('./components/Main/Main.js', () => {
             console.log('Accepting the updated Main section')
-            Container.removeChild(main)
+            container.removeChild(main)
             main = Main()
-            Container.appendChild(main)
+            container.appendChild(main)
         })
     }
 
     let footer = Footer()
-    Container.appendChild(footer)
+    container.appendChild(footer)
 
     if (module.hot) {
         module.hot.accept('./components/Footer/Footer.js', () => {
             console.log('Accepting the updated Footer section')
-            Container.removeChild(footer)
+            container.removeChild(footer)
             footer = Footer()
-            Container.appendChild(footer)
+            container.appendChild(footer)
         })
     }
 
-    return Container
+    return container
 }
 
 export default App

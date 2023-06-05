@@ -2,8 +2,8 @@ import data from './container.data.json'
 import createCustomizedElement from '../../utils/createCustomizedElement'
 import './container.styles.scss'
 
-const Container = createCustomizedElement(data)
+const container = createCustomizedElement(data)
 
-Container.classList.add('app')
+container.classList.add('app')
 
-export default Container
+export default container
