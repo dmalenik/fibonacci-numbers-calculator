@@ -1,7 +1,6 @@
-import data from './Container.data.json'
+import data from './container.data.json'
 import createCustomizedElement from '../../utils/createCustomizedElement'
-// import './Container.styles.css'
-import './Container.styles.scss'
+import './container.styles.scss'
 
 const Container = createCustomizedElement(data)
 
