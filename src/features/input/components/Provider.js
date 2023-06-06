@@ -2,7 +2,7 @@ import form from '../elements/form/form'
 import label from '../elements/label/label'
 import input from '../elements/input/input'
 import button from '../elements/button/button'
-import './Provider.styles.css'
+// import './Provider.styles.css'
 
 const Provider = () => {
     form.appendChild(label)
