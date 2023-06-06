@@ -3,8 +3,10 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background: linear-gradient(120.21deg, #3e708e 11.18%, #649698 74.17%);
 }
