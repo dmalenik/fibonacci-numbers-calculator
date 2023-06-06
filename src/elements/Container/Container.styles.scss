@@ -1,7 +1,11 @@
-$app-color: orange;
-$app-text-color: yellow;
+$app-color: #fff;
 
 .app {
-    background-color: $app-color;
-    color: $app-text-color;
+    background: $app-color;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
 }
