@@ -3,10 +3,12 @@
         "animations": [
             {
                 "position": "absolute",
-                "left": "21vw"
+                "top": "13vw",
+                "left": "33vw"
             },
             {
                 "position": "absolute",
+                "top": "13vw",
                 "left": "0vw"
             }
         ],
@@ -18,11 +20,13 @@
         "animations": [
             {
                 "position": "absolute",
+                "top": "13vw",
                 "left": "0vw"
             },
             {
                 "position": "absolute",
-                "left": "21vw"
+                "top": "13vw",
+                "left": "33vw"
             }
         ],
         "time": {

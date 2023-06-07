@@ -3,10 +3,12 @@
         "animations": [
             {
                 "position": "absolute",
+                "top": "11.25vw",
                 "left": "25vw"
             },
             {
                 "position": "absolute",
+                "top": "11.25vw",
                 "left": "0vw"
             }
         ],
@@ -18,10 +20,12 @@
         "animations": [
             {
                 "position": "absolute",
+                "top": "11.25vw",
                 "left": "0vw"
             },
             {
                 "position": "absolute",
+                "top": "11.25vw",
                 "left": "25vw"
             }
         ],
