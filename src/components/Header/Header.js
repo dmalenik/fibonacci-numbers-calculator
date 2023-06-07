@@ -1,4 +1,4 @@
-import headerElement from './elements/headerElement/headerElement'
+import headerElement from './elements/header-element/headerElement'
 import h1 from './elements/h1/h1'
 
 const Header = () => {
