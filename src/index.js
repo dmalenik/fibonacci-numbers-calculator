@@ -1,6 +1,6 @@
 import App from './App'
-import './assets/styles/normalize.scss'
-import './assets/styles/global.scss'
+import './styles/normalize.scss'
+import './styles/global.scss'
 
 let app = App()
 document.body.appendChild(app)
