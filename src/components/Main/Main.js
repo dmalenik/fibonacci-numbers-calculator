@@ -2,8 +2,10 @@ import mainElement from './elements/mainElement/mainElement'
 import h2 from './elements/h2/h2'
 import Provider from '../../features/input/components/Provider'
 import Output from '../../features/output/components/Output'
+import './Main.styles.scss'
 
 const Main = () => {
+    mainElement.classList.add('main')
     mainElement.appendChild(h2)
 
     let provider = Provider()
