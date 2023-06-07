@@ -17,6 +17,12 @@
             }
         ],
         "import/no-extraneous-dependencies": ["off"],
+        "import/no-unresolved": [
+            "warn",
+            {
+                "commonjs": true
+            }
+        ],
         "no-console": ["off"],
         "no-param-reassign": ["warn"],
         "camelcase": ["error"],
