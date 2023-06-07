@@ -2,8 +2,11 @@ import container from './elements/container/container'
 import Header from './components/Header/Header'
 import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
+import './App.styles.scss'
 
 const App = () => {
+    container.classList.add('app')
+
     let header = Header()
     container.appendChild(header)
 
