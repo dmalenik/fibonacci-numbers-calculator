@@ -1,7 +1,7 @@
 import mainElement from './elements/mainElement/mainElement'
 import h2 from './elements/h2/h2'
-import Provider from '../../features/input/components/Provider'
-import Output from '../../features/output/components/Output'
+import Provider from '../../features/input/Provider'
+import Output from '../../features/output/Output'
 import './Main.styles.scss'
 
 const Main = () => {
@@ -12,7 +12,7 @@ const Main = () => {
     mainElement.appendChild(provider)
 
     if (module.hot) {
-        module.hot.accept('../../features/input/components/Provider.js', () => {
+        module.hot.accept('../../features/input/Provider.js', () => {
             console.log('Accepting the updated Provider component')
             mainElement.removeChild(provider)
             provider = Provider()
@@ -24,7 +24,7 @@ const Main = () => {
     mainElement.appendChild(output)
 
     if (module.hot) {
-        module.hot.accept('../../features/output/components/Output.js', () => {
+        module.hot.accept('../../features/output/Output.js', () => {
             console.log('Accepting the updated Output component')
             mainElement.removeChild(output)
             output = Output()
