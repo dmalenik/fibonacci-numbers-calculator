@@ -3,6 +3,7 @@ import button from './elements/button/button'
 import h2 from './elements/h2/h2'
 
 const Output = () => {
+    section.classList.add('d-none')
     section.appendChild(h2)
     section.appendChild(button)
 

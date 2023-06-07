@@ -1,6 +1,6 @@
-import animateElement from '../../../shared/utils/animateElement'
+import animateElement from '../../../utils/animateElement'
 import outputAnimations from '../../Output.animations.json'
-import changeClass from '../../../shared/utils/changeClass'
+import changeClass from '../../../utils/changeClass'
 import providerAnimations from '../../../input/Provider.animations.json'
 
 const handleOutput = () => {
@@ -9,12 +9,8 @@ const handleOutput = () => {
         outputAnimations.centerToLeft.animations,
         outputAnimations.centerToLeft.time
     ).finished.then(() => {
-        changeClass(document.querySelector('#output'), 'f-col', 'd-hidden')
-        changeClass(
-            document.querySelector('#fibonacci-form'),
-            'd-hidden',
-            'f-row'
-        )
+        changeClass(document.querySelector('#output'), 'd-flex', 'd-none')
+        changeClass(document.querySelector('#fibonacci-form'), 'd-none', 'd-flex')
         animateElement(
             document.querySelector('#fibonacci-form'),
             providerAnimations.leftToCenter.animations,

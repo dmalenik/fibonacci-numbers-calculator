@@ -1,9 +1,9 @@
-import animateElement from '../../../shared/utils/animateElement'
+import animateElement from '../../../utils/animateElement'
 import providerAnimations from '../../Provider.animations.json'
-import changeClass from '../../../shared/utils/changeClass'
 import displayFibonacciNumber from './displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
 import outputAnimations from '../../../output/Output.animations.json'
+import changeClass from '../../../utils/changeClass'
 
 const handleInput = () => {
     animateElement(
@@ -13,10 +13,10 @@ const handleInput = () => {
     ).finished.then(() => {
         changeClass(
             document.querySelector('#fibonacci-form'),
-            'f-row',
-            'd-hidden'
+            'd-flex',
+            'd-none'
         )
-        changeClass(document.querySelector('#output'), 'd-hidden', 'f-col')
+        changeClass(document.querySelector('#output'), 'd-none', 'd-flex')
         displayFibonacciNumber(
             Number(
                 document.querySelector('#input-number').getAttribute('value')

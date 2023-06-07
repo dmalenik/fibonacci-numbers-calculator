@@ -4,6 +4,7 @@ import input from './elements/input/input'
 import button from './elements/button/button'
 
 const Provider = () => {
+    form.classList.add('d-flex')
     form.appendChild(label)
     form.appendChild(input)
     form.appendChild(button)
