@@ -1,9 +1,9 @@
 import animateElement from '../../../shared/utils/animateElement'
-import providerAnimations from '../../components/Provider.animations.json'
+import providerAnimations from '../../Provider.animations.json'
 import changeClass from '../../../shared/utils/changeClass'
 import displayFibonacciNumber from './displayFibonacciNumber'
 import calcFibonacciNum from './calcFibonacciNum'
-import outputAnimations from '../../../output/components/Output.animations.json'
+import outputAnimations from '../../../output/Output.animations.json'
 
 const handleInput = () => {
     animateElement(
