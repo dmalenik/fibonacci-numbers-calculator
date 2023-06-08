@@ -1,7 +1,7 @@
-import animateElement from '../../../utils/animateElement'
-import outputAnimations from '../../Output.animations.json'
-import changeClass from '../../../utils/changeClass'
-import providerAnimations from '../../../input/Provider.animations.json'
+import animateElement from '../../../services/animationService'
+import outputAnimations from '../../../animations/Output.animations.json'
+import changeClass from '../../../utils/classUtils'
+import providerAnimations from '../../../animations/Provider.animations.json'
 
 const handleOutput = () => {
     animateElement(
@@ -10,7 +10,11 @@ const handleOutput = () => {
         outputAnimations.centerToLeft.time
     ).finished.then(() => {
         changeClass(document.querySelector('#output'), 'd-flex', 'd-none')
-        changeClass(document.querySelector('#fibonacci-form'), 'd-none', 'd-flex')
+        changeClass(
+            document.querySelector('#fibonacci-form'),
+            'd-none',
+            'd-flex'
+        )
         animateElement(
             document.querySelector('#fibonacci-form'),
             providerAnimations.leftToCenter.animations,
