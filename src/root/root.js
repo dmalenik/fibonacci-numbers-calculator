@@ -1,5 +1,5 @@
 import data from './root.data.json'
-import createCustomizedElement from '../utils/createCustomizedElement'
+import createCustomizedElement from '../utils/DOMElementUtils'
 
 const root = createCustomizedElement(data)
 
