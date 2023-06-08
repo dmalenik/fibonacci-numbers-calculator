@@ -15,4 +15,16 @@ $app-color: #fff;
         height: 20%;
     }
 
+    .main,
+    .form,
+    .output {
+        width: 100%;
+    }
+
+    .form,
+    .output {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
