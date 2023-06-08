@@ -1,35 +1,35 @@
-import mainElement from './elements/main-element/mainElement'
+import container from './container/container'
 import Provider from '../../features/input/Provider'
 import Output from '../../features/output/Output'
 
 const Main = () => {
-    mainElement.classList.add('main')
+    container.classList.add('main')
 
     let provider = Provider()
-    mainElement.appendChild(provider)
+    container.appendChild(provider)
 
     if (module.hot) {
         module.hot.accept('../../features/input/Provider.js', () => {
             console.log('Accepting the updated Provider component')
-            mainElement.removeChild(provider)
+            container.removeChild(provider)
             provider = Provider()
-            mainElement.appendChild(provider)
+            container.appendChild(provider)
         })
     }
 
     let output = Output()
-    mainElement.appendChild(output)
+    container.appendChild(output)
 
     if (module.hot) {
         module.hot.accept('../../features/output/Output.js', () => {
             console.log('Accepting the updated Output component')
-            mainElement.removeChild(output)
+            container.removeChild(output)
             output = Output()
-            mainElement.appendChild(output)
+            container.appendChild(output)
         })
     }
 
-    return mainElement
+    return container
 }
 
 export default Main
