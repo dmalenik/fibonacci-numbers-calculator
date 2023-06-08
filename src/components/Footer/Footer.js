@@ -1,11 +1,11 @@
-import footerElement from './elements/footer-element/footerElement'
+import container from './elements/container/container'
 import h2 from './elements/h2/h2'
 
 const Footer = () => {
-    footerElement.classList.add('footer')
-    footerElement.appendChild(h2)
+    container.classList.add('footer')
+    container.appendChild(h2)
 
-    return footerElement
+    return container
 }
 
 export default Footer
