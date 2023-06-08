@@ -8,4 +8,11 @@ $app-color: #fff;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-between;
+
+    .header,
+    .main,
+    .footer {
+        height: 20%;
+    }
+
 }
