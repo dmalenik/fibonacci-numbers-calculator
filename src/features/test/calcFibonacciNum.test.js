@@ -1,6 +1,6 @@
 /* global describe, test, expect */
 /* eslint no-undef: "error" */
-import calcFibonacciNum from './calcFibonacciNum'
+import { calcFibonacciNum } from '../services/fibonacciNumService'
 
 describe('test calcFibonacciNum function', () => {
     test('5th Fibonacci number is 5', () => {
