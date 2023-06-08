@@ -3,13 +3,13 @@
         "animations": [
             {
                 "position": "absolute",
-                "top": "13vw",
-                "left": "33vw"
+                "top": "46%",
+                "left": "25%"
             },
             {
                 "position": "absolute",
-                "top": "13vw",
-                "left": "0vw"
+                "top": "46%",
+                "left": "0%"
             }
         ],
         "time": {
@@ -20,13 +20,13 @@
         "animations": [
             {
                 "position": "absolute",
-                "top": "13vw",
-                "left": "0vw"
+                "top": "46%",
+                "left": "0%"
             },
             {
                 "position": "absolute",
-                "top": "13vw",
-                "left": "33vw"
+                "top": "46%",
+                "left": "25%"
             }
         ],
         "time": {
