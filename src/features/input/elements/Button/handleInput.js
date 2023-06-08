@@ -1,9 +1,11 @@
-import animateElement from '../../../utils/animateElement'
-import providerAnimations from '../../Provider.animations.json'
-import displayFibonacciNumber from './displayFibonacciNumber'
-import calcFibonacciNum from './calcFibonacciNum'
-import outputAnimations from '../../../output/Output.animations.json'
-import changeClass from '../../../utils/changeClass'
+import animateElement from '../../../services/animationService'
+import providerAnimations from '../../../animations/Provider.animations.json'
+import {
+    calcFibonacciNum,
+    displayFibonacciNum,
+} from '../../../services/fibonacciNumService'
+import outputAnimations from '../../../animations/Output.animations.json'
+import changeClass from '../../../utils/classUtils'
 
 const handleInput = () => {
     animateElement(
@@ -17,7 +19,7 @@ const handleInput = () => {
             'd-none'
         )
         changeClass(document.querySelector('#output'), 'd-none', 'd-flex')
-        displayFibonacciNumber(
+        displayFibonacciNum(
             Number(
                 document.querySelector('#input-number').getAttribute('value')
             ),
