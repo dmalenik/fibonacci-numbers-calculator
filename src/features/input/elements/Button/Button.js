@@ -1,9 +1,10 @@
 import data from './button.data.json'
-import createCustomizedElement from '../../../../utils/createCustomizedElement'
-import handleInput from './handleInput'
+import createCustomizedElement from '../../../../utils/DOMElementUtils'
+// import handleInput from './handleInput'
+import handleInputCopy from './handleInput.copy'
 
 const button = createCustomizedElement(data)
 
-button.addEventListener('click', handleInput)
+button.addEventListener('click', handleInputCopy)
 
 export default button
