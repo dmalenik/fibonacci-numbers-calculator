@@ -1,5 +1,5 @@
 import data from './input.data.json'
-import createCustomizedElement from '../../../../utils/createCustomizedElement'
+import createCustomizedElement from '../../../../utils/DOMElementUtils'
 import setInputValue from './setInputValue'
 
 const input = createCustomizedElement(data)
