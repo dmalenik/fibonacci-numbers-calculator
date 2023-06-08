@@ -1,11 +1,11 @@
-import headerElement from './elements/header-element/headerElement'
+import container from './elements/container/container'
 import h1 from './elements/h1/h1'
 
 const Header = () => {
-    headerElement.classList.add('header')
-    headerElement.appendChild(h1)
+    container.classList.add('header')
+    container.appendChild(h1)
 
-    return headerElement
+    return container
 }
 
 export default Header
