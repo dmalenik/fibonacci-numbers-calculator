@@ -1,13 +1,9 @@
-import form from './elements/form/form'
-import label from './elements/label/label'
-import input from './elements/input/input'
-import button from './elements/button/button'
+import createCustomizedElement from '../../utils/DOMElementUtils'
+import data from './form.data.json'
 
 const Provider = () => {
+    const form = createCustomizedElement(data)
     form.classList.add('d-flex', 'form')
-    form.appendChild(label)
-    form.appendChild(input)
-    form.appendChild(button)
 
     return form
 }

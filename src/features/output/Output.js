@@ -1,11 +1,9 @@
-import section from './elements/section/section'
-import button from './elements/button/button'
-import h2 from './elements/h2/h2'
+import createCustomizedElement from '../../utils/DOMElementUtils'
+import data from './section.data.json'
 
 const Output = () => {
+    const section = createCustomizedElement(data)
     section.classList.add('d-none', 'output')
-    section.appendChild(h2)
-    section.appendChild(button)
 
     return section
 }
