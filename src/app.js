@@ -6,10 +6,9 @@ const App = () => {
     const root = createCustomizedElement(data)
     root.classList.add('app')
 
-    import('./components').then(({ Header, Main, Footer }) => {
-        root.appendChild(Header())
-        root.appendChild(Main())
-        root.appendChild(Footer())
+    import('./pages').then(({ MainPage }) => {
+        console.log(MainPage())
+        root.appendChild(MainPage())
     })
 
     return root

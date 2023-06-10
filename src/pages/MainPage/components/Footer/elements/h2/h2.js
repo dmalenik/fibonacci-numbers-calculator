@@ -1,5 +1,5 @@
 import data from './h2.data.json'
-import createCustomizedElement from '../../../../utils/DOMElementUtils'
+import createCustomizedElement from '../../../../../../utils/DOMElementUtils'
 
 const h2 = createCustomizedElement(data)
 
