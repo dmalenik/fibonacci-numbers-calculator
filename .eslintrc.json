@@ -23,6 +23,7 @@
                 "commonjs": true
             }
         ],
+        "import/prefer-default-export": ["warn"],
         "no-console": ["off"],
         "no-param-reassign": ["warn"],
         "camelcase": ["error"],
