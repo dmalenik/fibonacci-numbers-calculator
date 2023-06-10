@@ -5,6 +5,10 @@ const Main = () => {
     const container = createCustomizedElement(data)
     container.classList.add('main')
 
+    import('../../features').then(({ Output, Provider }) => {
+        container.appendChild(Provider())
+        container.appendChild(Output())
+    })
 
     return container
 }
