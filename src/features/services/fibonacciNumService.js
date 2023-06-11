@@ -10,13 +10,4 @@ const calcFibonacciNum = (queueNumber) => {
     return fibonacciNumber
 }
 
-const displayFibonacciNum = (queueNumber, handler, elem) => {
-    const fibonacciNumber = handler(queueNumber)
-    const output = elem
-
-    output.innerText = `The Fibonacci number at the sequence number ${queueNumber} is: ${fibonacciNumber}`
-
-    return output
-}
-
-export { calcFibonacciNum, displayFibonacciNum }
+export default calcFibonacciNum
