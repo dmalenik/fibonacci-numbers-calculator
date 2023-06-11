@@ -5,11 +5,9 @@ const Main = () => {
     const container = createCustomizedElement(data)
     container.classList.add('main')
 
-    // remove Output from importing
-    import('../../../../features').then(({ Output, Provider }) => {
+    import('../../../../features').then(({ Provider }) =>
         container.appendChild(Provider())
-        container.appendChild(Output())
-    })
+    )
 
     return container
 }
