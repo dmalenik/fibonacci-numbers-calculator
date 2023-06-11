@@ -7,27 +7,25 @@ const Output = () => {
     Promise.all([
         import('../services/fibonacciNumService'),
         import('../services/sessionStorageService'),
-    ])
-        .then((modules) => {
-            const calcFibonacciNum = modules[0].default
-            const updateItemToSessionStorage = modules[1].default
+        import('./elements'),
+    ]).then((modules) => {
+        const calcFibonacciNum = modules[0].default
+        const updateItemToSessionStorage = modules[1].default
+        const { h2, result, button } = modules[2]
 
-            const sequenceNumber = sessionStorage.getItem('sequenceNumber')
-            const fibonacciNum = calcFibonacciNum(sequenceNumber)
+        const sequenceNumber = sessionStorage.getItem('sequenceNumber')
+        const fibonacciNum = calcFibonacciNum(sequenceNumber)
 
-            updateItemToSessionStorage('fibonacciNum', fibonacciNum)
-        })
-        .then(() => {
-            import('./elements').then(({ h2, result, button }) => {
-                result.innerText = `The Fibonacci number is ${sessionStorage.getItem(
-                    'fibonacciNum'
-                )}`
+        updateItemToSessionStorage('fibonacciNum', fibonacciNum)
 
-                section.appendChild(h2)
-                section.appendChild(result)
-                section.appendChild(button)
-            })
-        })
+        result.innerText = `The Fibonacci number is ${sessionStorage.getItem(
+            'fibonacciNum'
+        )}`
+
+        section.appendChild(h2)
+        section.appendChild(result)
+        section.appendChild(button)
+    })
 
     return section
 }
