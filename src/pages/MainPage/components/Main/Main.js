@@ -5,6 +5,7 @@ const Main = () => {
     const container = createCustomizedElement(data)
     container.classList.add('main')
 
+    // remove Output from importing
     import('../../../../features').then(({ Output, Provider }) => {
         container.appendChild(Provider())
         container.appendChild(Output())
