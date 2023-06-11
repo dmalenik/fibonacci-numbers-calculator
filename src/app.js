@@ -7,7 +7,6 @@ const App = () => {
     root.classList.add('app')
 
     import('./pages').then(({ MainPage }) => {
-        console.log(MainPage())
         root.appendChild(MainPage())
     })
 
