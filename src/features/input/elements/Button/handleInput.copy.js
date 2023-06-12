@@ -1,15 +1,9 @@
 const handleInputCopy = () => {
-    sessionStorage.setItem(
-        'sequenceNumber',
-        document.querySelector('#input-number').getAttribute('value')
-    )
 
-    document
-        .querySelector('.main')
-        .removeChild(document.querySelector('#fibonacci-form'))
+    const parent = document.querySelector('main')
 
     import('../../../output/Output').then(({ default: Output }) =>
-        document.querySelector('.main').appendChild(Output())
+        parent.replaceChildren(Output())
     )
 }
 

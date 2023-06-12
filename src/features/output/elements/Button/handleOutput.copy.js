@@ -1,11 +1,9 @@
 const handleOutputCopy = () => {
-    document
-        .querySelector('.main')
-        .removeChild(document.querySelector('#output'))
+    const parent = document.querySelector('main')
 
-    import('../../../input/Provider').then(({ default: Provider }) => {
-        document.querySelector('.main').appendChild(Provider())
-    })
+    import('../../../input/Provider').then(({ default: Provider }) =>
+        parent.replaceChildren(Provider())
+    )
 }
 
 export default handleOutputCopy
