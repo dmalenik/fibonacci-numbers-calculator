@@ -1,4 +1,4 @@
-import createCustomizedElement from '../../../../utils/DOMElementUtils'
+import createCustomizedElement from '../../utils/DOMElementUtils'
 import data from './container.data.json'
 import h2 from './elements/h2/h2'
 

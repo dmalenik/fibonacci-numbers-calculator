@@ -6,8 +6,10 @@ const App = () => {
     const root = createCustomizedElement(data)
     root.classList.add('app')
 
-    import('./pages').then(({ MainPage }) => {
-        root.appendChild(MainPage())
+    import('./components').then(({ Header, Main, Footer }) => {
+        root.appendChild(Header())
+        root.appendChild(Main())
+        root.appendChild(Footer())
     })
 
     return root

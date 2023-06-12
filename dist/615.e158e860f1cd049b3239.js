@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfibonacci_numbers_generator=self.webpackChunkfibonacci_numbers_generator||[]).push([[615],{615:(e,n,a)=>{a.r(n),a.d(n,{MainPage:()=>t});var r=a(924);const i=JSON.parse('{"name":"div","attrs":{},"children":""}'),t=()=>{const e=(0,r.Z)(i);return a.e(2).then(a.bind(a,2)).then((({Header:n,Main:a,Footer:r})=>{e.appendChild(n()),e.appendChild(a()),e.appendChild(r())})),e}}}]);
-//# sourceMappingURL=615.e158e860f1cd049b3239.js.map
