@@ -1,4 +1,4 @@
-import createCustomizedElement from '../../utils/DOMElementUtils'
+import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './container.data.json'
 import h1 from './elements/h1/h1'
 

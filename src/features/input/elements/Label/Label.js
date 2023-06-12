@@ -1,5 +1,5 @@
 import data from './label.data.json'
-import createCustomizedElement from '../../../../utils/DOMElementUtils'
+import { createCustomizedElement } from '../../../../utils/DOMUtils'
 
 const label = createCustomizedElement(data)
 

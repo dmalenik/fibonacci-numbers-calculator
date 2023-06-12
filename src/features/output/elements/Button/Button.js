@@ -1,5 +1,5 @@
 import data from './button.data.json'
-import createCustomizedElement from '../../../../utils/DOMElementUtils'
+import { createCustomizedElement } from '../../../../utils/DOMUtils'
 // import handleOutput from './handleOutput'
 import handleOutputCopy from './handleOutput.copy'
 

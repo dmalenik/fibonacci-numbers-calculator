@@ -1,4 +1,4 @@
-import createCustomizedElement from "../../../../utils/DOMElementUtils";
+import { createCustomizedElement } from '../../../../utils/DOMUtils'
 import data from './result.data.json'
 
 const result = createCustomizedElement(data)

@@ -1,4 +1,4 @@
-import createCustomizedElement from './utils/DOMElementUtils'
+import { createCustomizedElement } from './utils/DOMUtils'
 import data from './root.data.json'
 import './App.styles.scss'
 
