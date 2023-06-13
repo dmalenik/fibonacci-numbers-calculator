@@ -4,7 +4,6 @@ import './App.styles.scss'
 
 const App = () => {
     const root = createCustomizedElement(data)
-    root.classList.add('app')
 
     import('./components').then(({ Header, Main, Footer }) => {
         root.appendChild(Header())

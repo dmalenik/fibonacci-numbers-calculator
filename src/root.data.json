@@ -1,5 +1,7 @@
 {
     "name": "div",
-    "attrs": {},
+    "attrs": {
+        "class": "app"
+    },
     "children": ""
 }
