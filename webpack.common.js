@@ -1,22 +1,34 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = {
     entry: {
         app: './src/index.js',
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Fibonacci Numbers Generator',
-        }),
-    ],
+    plugins: devMode
+        ? [
+              new HtmlWebpackPlugin({
+                  title: 'Fibonacci Numbers Generator',
+              }),
+          ]
+        : [
+              new HtmlWebpackPlugin({
+                  title: 'Fibonacci Numbers Generator',
+              }),
+              new MiniCssExtractPlugin(),
+          ],
     module: {
         rules: [
             {
                 test: /\.css$|\.scss$/i,
                 use: [
                     {
-                        loader: 'style-loader',
+                        loader: devMode
+                            ? 'style-loader'
+                            : MiniCssExtractPlugin.loader,
                     },
                     {
                         loader: 'css-loader',
@@ -40,6 +52,10 @@ module.exports = {
                         },
                     },
                 ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ],
     },
