@@ -6,7 +6,7 @@ const Output = () => {
 
     Promise.all([
         import('../services/fibonacciNumService'),
-        import('../services/sessionStorageService'),
+        import('../utils/sessionStorageUtils'),
         import('./elements'),
     ]).then((modules) => {
         const calcFibonacciNum = modules[0].default
