@@ -1,7 +1,6 @@
 {
     "name": "div",
     "attrs": {
-        "class": "app"
     },
-    "children": ""
+    "content": ""
 }

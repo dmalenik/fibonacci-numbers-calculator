@@ -3,5 +3,5 @@
     "attrs": {
         "for": "fibonacci-number"
     },
-    "children": "Type a sequence number:"
+    "content": "Type a sequence number:"
 }

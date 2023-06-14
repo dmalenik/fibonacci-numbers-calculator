@@ -4,5 +4,5 @@
         "id": "again",
         "type": "button"
     },
-    "children": "Try again"
+    "content": "Try again"
 }

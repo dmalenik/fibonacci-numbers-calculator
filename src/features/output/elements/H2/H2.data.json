@@ -1,5 +1,5 @@
 {
     "name": "h2",
     "attrs": {},
-    "children": "Display the Fibonacci number"
+    "content": "Display the Fibonacci number"
 }
