@@ -2,6 +2,7 @@
     "name": "form",
     "attrs": {
         "id": "fibonacci-form",
+        "class": "features",
         "method": "",
         "action": ""
     },

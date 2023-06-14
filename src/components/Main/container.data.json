@@ -1,4 +1,7 @@
 {
     "name": "main",
+    "attrs": {
+        "class": "component"
+    },
     "content": ""
 }

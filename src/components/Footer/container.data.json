@@ -1,4 +1,7 @@
 {
     "name": "footer",
+    "attrs": {
+        "class": "component"
+    },
     "content": ""
 }
