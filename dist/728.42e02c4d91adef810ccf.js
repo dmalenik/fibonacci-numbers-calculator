@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfibonacci_numbers_generator=self.webpackChunkfibonacci_numbers_generator||[]).push([[728],{728:(e,n,r)=>{r.r(n),r.d(n,{default:()=>c});const c=()=>{const e=document.querySelector("main");Promise.resolve().then(r.bind(r,327)).then((({default:n})=>e.replaceChildren(n())))}}}]);
+//# sourceMappingURL=728.42e02c4d91adef810ccf.js.map
