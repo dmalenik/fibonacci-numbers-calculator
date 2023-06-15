@@ -1,7 +1,8 @@
 {
     "name": "section",
     "attrs": {
-        "id": "output"
+        "id": "output",
+        "class": "features output"
     },
     "content": ""
 }

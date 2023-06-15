@@ -1,5 +1,6 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './section.data.json'
+import './Output.styles.scss'
 
 const Output = () => {
     const section = createCustomizedElement(data)
@@ -11,7 +12,7 @@ const Output = () => {
     ]).then((modules) => {
         const calcFibonacciNum = modules[0].default
         const updateItemToSessionStorage = modules[1].default
-        const { h2, result, button } = modules[2]
+        const { result, button } = modules[2]
 
         const sequenceNumber = sessionStorage.getItem('sequenceNumber')
         const fibonacciNum = calcFibonacciNum(sequenceNumber)
@@ -22,7 +23,6 @@ const Output = () => {
             'fibonacciNum'
         )}`
 
-        section.appendChild(h2)
         section.appendChild(result)
         section.appendChild(button)
     })
