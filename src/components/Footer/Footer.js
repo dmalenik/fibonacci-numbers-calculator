@@ -1,5 +1,6 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './container.data.json'
+import './Footer.styles.scss'
 
 const Footer = () => {
     const container = createCustomizedElement(data)

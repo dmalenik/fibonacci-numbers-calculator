@@ -1,0 +1,19 @@
+.footer {
+    justify-content: space-evenly;
+
+    .link {
+        position: relative;
+        left: 1%;
+        height: 2rem;
+
+        img {
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+
+    .copyright {
+        position: relative;
+        left: 12%;
+    }
+}

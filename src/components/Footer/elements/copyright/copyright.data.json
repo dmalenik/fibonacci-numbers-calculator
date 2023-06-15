@@ -1,5 +1,7 @@
 {
     "name": "p",
-    "attrs": {},
+    "attrs": {
+        "class": "copyright"
+    },
     "content": ""
 }
