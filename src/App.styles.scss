@@ -9,6 +9,7 @@ $app-color: #fff;
     align-items: center;
     flex-direction: column;
     background: $app-color;
+    font-size: 1.35rem;
     overflow: auto;
 
     .component {
@@ -21,11 +22,13 @@ $app-color: #fff;
 
         .features {
             width: 100%;
+            height: 100%;
             padding: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            object-fit: cover;
         }
     }
 }
