@@ -2,7 +2,7 @@
     "name": "form",
     "attrs": {
         "id": "fibonacci-form",
-        "class": "features",
+        "class": "features provider",
         "method": "",
         "action": ""
     },

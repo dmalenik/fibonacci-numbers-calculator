@@ -2,6 +2,7 @@
     "name": "button",
     "attrs": {
         "id": "fibonacci-button",
+        "class": "btn",
         "type": "button",
         "form": "fibonacci-form"
     },
