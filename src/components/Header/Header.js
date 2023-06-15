@@ -1,5 +1,6 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './container.data.json'
+import './Header.styles.scss'
 
 const Header = () => {
     const container = createCustomizedElement(data)

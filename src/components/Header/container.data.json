@@ -1,7 +1,7 @@
 {
     "name": "header",
     "attrs": {
-        "class": "component"
+        "class": "component header"
     },
     "content": ""
 }
