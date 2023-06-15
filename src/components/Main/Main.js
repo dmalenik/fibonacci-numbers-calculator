@@ -1,5 +1,6 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './container.data.json'
+import './Main.styles.scss'
 
 const Main = () => {
     const container = createCustomizedElement(data)
