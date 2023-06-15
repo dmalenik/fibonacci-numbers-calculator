@@ -1,30 +1,31 @@
 $app-color: #fff;
 
 .root {
-    background: $app-color;
     width: 50%;
-    height: 90%;
+    height: 80%;
+    padding: 1.5rem;
     display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: $app-color;
+    overflow: auto;
 
-    .header,
-    .main,
-    .footer {
-        height: 20%;
-    }
-
-    .main,
-    .form,
-    .output {
+    .component {
         width: 100%;
-    }
-
-    .form,
-    .output {
-        flex-direction: column;
-        justify-content: center;
+        height: 33%;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        display: flex;
         align-items: center;
+
+        .features {
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }
