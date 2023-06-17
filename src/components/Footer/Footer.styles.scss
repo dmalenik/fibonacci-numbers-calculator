@@ -1,3 +1,5 @@
+@use '../../styles/vars';
+
 .footer {
     justify-content: space-evenly;
 
@@ -15,5 +17,10 @@
     .copyright {
         position: relative;
         left: 12%;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        color: vars.$footer-text-color;
+        line-height: 24px;
     }
 }
