@@ -1,12 +1,12 @@
 @use './styles/vars';
+@use './styles/mixins';
 
 .root {
     width: 50%;
     height: 80%;
     padding: 1.5rem;
-    display: flex;
+    @include mixins.d-flex;
     justify-content: space-between;
-    align-items: center;
     flex-direction: column;
     background: vars.$app-color;
     font-size: 1.35rem;
@@ -17,16 +17,14 @@
         height: 33%;
         padding: 1.5rem;
         margin: 1rem 0;
-        display: flex;
-        align-items: center;
+        @include mixins.d-flex;
 
         .features {
             width: 100%;
             height: 100%;
             padding: 1rem;
-            display: flex;
+            @include mixins.d-flex;
             justify-content: center;
-            align-items: center;
             flex-direction: column;
             object-fit: cover;
         }
