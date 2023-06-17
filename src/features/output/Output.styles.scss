@@ -1,7 +1,7 @@
-$output-background: linear-gradient(162.21deg, #517879 4.83%, #1e3e57 103.44%);
+@use '../../styles/vars';
 
 .output {
-    background: $output-background;
+    background: vars.$output-background;
 
     .btn,
     .result {

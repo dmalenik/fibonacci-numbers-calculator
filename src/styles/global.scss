@@ -1,4 +1,4 @@
-$app-background: linear-gradient(120.21deg, #3e708e 11.18%, #649698 74.17%);
+@use './vars';
 
 * {
     box-sizing: border-box;
@@ -6,25 +6,10 @@ $app-background: linear-gradient(120.21deg, #3e708e 11.18%, #649698 74.17%);
 
 html {
     font-size: 90%;
-}
 
-body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $app-background;
-}
-
-p {
-    margin: 0;
-}
-
-.d-none {
-    display: none;
-}
-
-.d-flex {
-    display: flex;
-    align-items: center;
+    body {
+        height: 100vh;
+        justify-content: center;
+        background: vars.$app-background;
+    }
 }

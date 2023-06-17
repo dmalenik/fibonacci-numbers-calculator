@@ -1,4 +1,4 @@
-$app-color: #fff;
+@use './styles/vars';
 
 .root {
     width: 50%;
@@ -8,7 +8,7 @@ $app-color: #fff;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background: $app-color;
+    background: vars.$app-color;
     font-size: 1.35rem;
     overflow: auto;
 
