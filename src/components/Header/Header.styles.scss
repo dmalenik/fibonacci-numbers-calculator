@@ -1,16 +1,16 @@
 @use '../../styles/vars';
+@use '../../styles/mixins';
 
 .header {
     justify-content: center;
 
     h1 {
-        font-size: 24px;
-        font-weight: 700;
-        font-style: normal;
-        line-height: 24px;
+        @include mixins.font-settings(
+            $size: 24px,
+            $weight: 700,
+            $f-color: transparent
+        );
         background: vars.$heading-background;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         background-clip: text;
     }
 }

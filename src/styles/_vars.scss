@@ -3,8 +3,6 @@
 /* app variables */
 $app-background: linear-gradient(120.21deg, #3e708e 11.18%, #649698 74.17%);
 $app-color: #fff;
-$app-fonts: 'Space Grotesk';
-$footer-text-color: #c4c4c4;
 
 /* features variables */
 /* provider */
@@ -18,7 +16,10 @@ $heading-background: linear-gradient(
 $field-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
 $provider-btn-border-color: #284a5e;
 $btn-background: #27485d;
-$btn-shadow: 0px 2px 2px 2px rgba(204, 204, 204, 0.1);
-$text-color: #000;
 /* output */
 $output-background: linear-gradient(162.21deg, #517879 4.83%, #1e3e57 103.44%);
+
+/* fonts */
+$app-fonts: 'Space Grotesk';
+$footer-text-color: #c4c4c4;
+$text-color: #000;

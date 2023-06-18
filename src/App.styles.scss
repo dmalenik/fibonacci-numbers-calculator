@@ -9,7 +9,7 @@
     justify-content: space-between;
     flex-direction: column;
     background: vars.$app-color;
-    font-size: 1.35rem;
+    @include mixins.font-settings($size: 1.35rem);
     overflow: auto;
 
     .component {
@@ -26,7 +26,6 @@
             @include mixins.d-flex;
             justify-content: center;
             flex-direction: column;
-            object-fit: cover;
         }
     }
 }
