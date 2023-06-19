@@ -10,7 +10,9 @@
             $weight: 700,
             $f-color: transparent
         );
+        text-align: center;
         background: vars.$heading-background;
         background-clip: text;
+        --webkit-background-clip: text;
     }
 }
