@@ -6,18 +6,16 @@
     background: vars.$output-background;
     box-shadow: 3px 3px 4px 2px #517879;
 
-    .btn,
-    .result {
-        height: 2rem;
+    .result,
+    .btn {
+        width: 100%;
     }
 
     .result {
-        width: 100%;
-        height: 100%;
-        margin-bottom: 1.5rem;
+        margin: 0.75rem 0 1.5rem;
         text-align: center;
         @include mixins.font-settings(
-            $size: 21px,
+            $size: 20px,
             $weight: 700,
             $styles: normal,
             $l-height: 35px,
@@ -27,7 +25,7 @@
     }
 
     .btn {
-        width: 30%;
+        margin-bottom: 1rem;
         border: unset;
         background: none;
         @include mixins.font-settings(

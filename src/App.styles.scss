@@ -2,9 +2,9 @@
 @use './styles/mixins';
 
 .root {
-    width: 40%;
-    height: 80%;
-    padding: 1.5rem;
+    width: 29%;
+    height: 78%;
+    padding: 1.25rem;
     @include mixins.d-flex;
     justify-content: space-between;
     flex-direction: column;
