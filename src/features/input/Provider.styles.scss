@@ -19,6 +19,10 @@
             $f-color: vars.$text-color,
             $l-height: 16px
         );
+
+        &:focus {
+            outline: none;
+        }
     }
 
     .label {
