@@ -2,6 +2,7 @@
 /* eslint no-undef: "error" */
 import calcFibonacciNum from '../services/fibonacciNumService'
 
+// till 1474
 describe('test calcFibonacciNum function', () => {
     test('5th Fibonacci number is 5', () => {
         expect(calcFibonacciNum(5)).toBe(5)

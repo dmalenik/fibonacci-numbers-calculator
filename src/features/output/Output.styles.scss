@@ -1,7 +1,10 @@
 @use '../../styles/vars';
+@use '../../styles/mixins';
 
 .output {
+    border-radius: 5px;
     background: vars.$output-background;
+    box-shadow: 3px 3px 4px 2px #517879;
 
     .btn,
     .result {
@@ -9,12 +12,27 @@
     }
 
     .result {
-        width: 50%;
+        width: 100%;
+        height: 100%;
         margin-bottom: 1.5rem;
         text-align: center;
+        @include mixins.font-settings(
+            $size: 21px,
+            $weight: 700,
+            $styles: normal,
+            $l-height: 35px,
+            $f-color: vars.$output-text-color
+        );
+        text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.1);
     }
 
     .btn {
-        width: 20%;
+        width: 30%;
+        border: unset;
+        background: none;
+        @include mixins.font-settings(
+            $f-color: vars.$output-text-color,
+            $weight: 700
+        );
     }
 }
