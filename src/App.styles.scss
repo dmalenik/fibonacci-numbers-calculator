@@ -21,10 +21,161 @@
         .features {
             width: 100%;
             height: 100%;
-            padding: 1rem;
             @include mixins.d-flex;
             justify-content: center;
             flex-direction: column;
         }
+    }
+}
+
+@media screen and (max-width: 1052px) {
+    .root {
+        width: 35%;
+        height: 80%;
+        padding: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .root {
+        width: 38%;
+        height: 82%;
+        padding: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .root {
+        width: 40%;
+        height: 83%;
+        padding: 1.09rem;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .root {
+        width: 42%;
+        height: 84%;
+        padding: 1.07rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .root {
+        width: 45%;
+        height: 85%;
+        padding: 1.05rem;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .root {
+        width: 48%;
+        height: 88%;
+        padding: 1.03rem;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .root {
+        width: 52%;
+        height: 89%;
+        padding: 1.01rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .root {
+        width: 56%;
+        height: 90%;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .root {
+        width: 60%;
+        height: 91%;
+        padding: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .root {
+        width: 64%;
+        height: 92%;
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .root {
+        width: 67%;
+        height: 93%;
+        padding: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .root {
+        width: 71%;
+        height: 95%;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .root {
+        width: 75%;
+        height: 98%;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .root {
+        width: 79%;
+        height: 99%;
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .root {
+        width: 83%;
+        height: 100%;
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .root {
+        width: 88%;
+        padding: 0.1rem;
+    }
+}
+
+@media screen and (max-height: 305px) {
+    .root {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .root {
+        width: 91%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .root {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 223px) {
+    .root {
+        width: 100%;
     }
 }

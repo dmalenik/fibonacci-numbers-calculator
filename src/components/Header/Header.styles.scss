@@ -17,3 +17,163 @@
         --webkit-background-clip: text;
     }
 }
+
+@media screen and (max-width: 984px) {
+    .header {
+        padding: 0 1.4rem 1.4rem;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .header {
+        padding: 0 1.3rem 1.3rem;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .header {
+        padding: 0 1.2rem 1.2rem;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .header {
+        padding: 0 1.1rem 1.1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        padding: 0 1rem 1rem;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .header {
+        padding: 0 0.9rem 0.9rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .header {
+        padding: 0 0.7rem 0.7rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        padding: 0 0.6rem 0.6rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .header {
+        padding: 0 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .header {
+        padding: 0 0.4rem 0.4rem;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .header {
+        padding: 0 0.3rem 0.3rem;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .header {
+        padding: 0 0.2rem 0.2rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .header {
+        padding: 0 0.1rem 0.1rem;
+
+        h1 {
+            @include mixins.font-settings(
+                $size: 23px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .header {
+        padding: 0;
+
+        h1 {
+            @include mixins.font-settings(
+                $size: 22px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 223px) {
+    .header {
+        h1 {
+            @include mixins.font-settings(
+                $size: 21px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 199px) {
+    .header {
+        h1 {
+            @include mixins.font-settings(
+                $size: 20px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 186px) {
+    .header {
+        h1 {
+            @include mixins.font-settings(
+                $size: 19px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 175px) {
+    .header {
+        h1 {
+            @include mixins.font-settings(
+                $size: 18px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 167px) {
+    .header {
+        h1 {
+            @include mixins.font-settings(
+                $size: 16px,
+                $weight: 700,
+                $f-color: transparent
+            );
+        }
+    }
+}
