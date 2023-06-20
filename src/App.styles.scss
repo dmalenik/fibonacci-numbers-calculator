@@ -16,7 +16,6 @@
     .component {
         width: 100%;
         height: math.div(100%, 3);
-        padding: 1.5rem;
         @include mixins.d-flex;
 
         .features {
