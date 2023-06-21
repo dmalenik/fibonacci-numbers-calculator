@@ -1,10 +1,13 @@
-import HeaderElement from './elements/HeaderElement/HeaderElement'
-import H1 from './elements/H1/H1'
+import { createCustomizedElement } from '../../utils/DOMUtils'
+import data from './container.data.json'
+import './Header.styles.scss'
 
 const Header = () => {
-    HeaderElement.appendChild(H1)
+    const container = createCustomizedElement(data)
 
-    return HeaderElement
+    import('./elements').then(({ h1 }) => container.appendChild(h1))
+
+    return container
 }
 
 export default Header

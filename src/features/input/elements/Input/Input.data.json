@@ -2,9 +2,10 @@
     "name": "input",
     "attrs": {
         "id": "input-number",
+        "class": "field",
         "type": "number",
         "name": "input-number",
         "min": 0
     },
-    "children": ""
+    "content": ""
 }

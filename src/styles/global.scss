@@ -1,0 +1,19 @@
+@use './vars';
+@use './mixins';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: vars.$app-fonts;
+}
+
+html {
+    @include mixins.font-settings($size: 90%);
+
+    body {
+        height: 100vh;
+        @include mixins.d-flex;
+        justify-content: center;
+        background: vars.$app-background;
+    }
+}

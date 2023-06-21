@@ -1,9 +1,0 @@
-{
-    "name": "form",
-    "attrs": {
-        "id": "fibonacci-form",
-        "method": "",
-        "action": ""
-    },
-    "children": ""
-}

@@ -1,0 +1,94 @@
+.main {
+    padding: 1rem;
+    justify-content: center;
+}
+
+@media screen and (max-width: 984px) {
+    .main {
+        padding: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .main {
+        padding: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .main {
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .main {
+        padding: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .main {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .main {
+        padding: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .main {
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main {
+        padding: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .main {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .main {
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .main {
+        padding: 0.3rem;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .main {
+        padding: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .main {
+        padding: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .main {
+        padding: 0;
+    }
+}

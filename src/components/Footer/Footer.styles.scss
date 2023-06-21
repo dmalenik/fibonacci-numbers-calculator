@@ -1,0 +1,193 @@
+@use '../../styles/vars';
+@use '../../styles/mixins';
+
+.footer {
+    padding: 1.5rem 1.5rem 0;
+    justify-content: space-between;
+
+    .link {
+        height: 2rem;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .copyright {
+        @include mixins.font-settings(
+            $size: 16px,
+            $weight: 700,
+            $f-color: vars.$footer-text-color,
+            $l-height: 24px
+        );
+        text-align: end;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .footer {
+        padding: 1.4rem 1.4rem 0;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .footer {
+        padding: 1.3rem 1.3rem 0;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .footer {
+        padding: 1.2rem 1.2rem 0;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .footer {
+        padding: 1.1rem 1.1rem 0;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .footer {
+        padding: 0.9rem 0.9rem 0;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .footer {
+        padding: 0.7rem 0.7rem 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer {
+        padding: 0.6rem 0.6rem 0;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .footer {
+        padding: 0.5rem 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .footer {
+        padding: 0.4rem 0.4rem 0;
+    }
+}
+
+@media screen and (max-width: 327px) {
+    .footer {
+        padding: 0.3rem 0.3rem 0;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .footer {
+        padding: 0.2rem 0.2rem 0;
+    }
+}
+
+@media screen and (max-height: 305px) {
+    .footer {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .footer {
+        padding: 0.1rem 0.1rem 0;
+
+        .copyright {
+            @include mixins.font-settings(
+                $size: 15px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .footer {
+        padding: 0;
+
+        .copyright {
+            @include mixins.font-settings(
+                $size: 14px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 223px) {
+    .footer {
+        .copyright {
+            @include mixins.font-settings(
+                $size: 13px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 199px) {
+    .footer {
+        .copyright {
+            @include mixins.font-settings(
+                $size: 12px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 186px) {
+    .footer {
+        .copyright {
+            @include mixins.font-settings(
+                $size: 11px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 175px) {
+    .footer {
+        .copyright {
+            @include mixins.font-settings(
+                $size: 10px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 167px) {
+    .footer {
+        .copyright {
+            @include mixins.font-settings(
+                $size: 9px,
+                $weight: 700,
+                $f-color: vars.$footer-text-color,
+                $l-height: 24px
+            );
+        }
+    }
+}

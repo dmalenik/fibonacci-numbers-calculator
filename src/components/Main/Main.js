@@ -1,36 +1,15 @@
-import MainElement from './elements/MainElement/MainElement'
-import H2 from './elements/H2/H2'
-import Input from '../../features/input/components/Provider'
-import Output from '../../features/output/components/Output'
+import { createCustomizedElement } from '../../utils/DOMUtils'
+import data from './container.data.json'
+import './Main.styles.scss'
 
 const Main = () => {
-    MainElement.appendChild(H2)
+    const container = createCustomizedElement(data)
 
-    let input = Input()
-    MainElement.appendChild(input)
+    import('../../features').then(({ Provider }) =>
+        container.appendChild(Provider())
+    )
 
-    if (module.hot) {
-        module.hot.accept('../../features/input/components/Provider.js', () => {
-            console.log('Accepting the updated Provider component')
-            MainElement.removeChild(input)
-            input = Input()
-            MainElement.appendChild(input)
-        })
-    }
-
-    let output = Output()
-    MainElement.appendChild(output)
-
-    if (module.hot) {
-        module.hot.accept('../../features/output/components/Output.js', () => {
-            console.log('Accepting the updated Output component')
-            MainElement.removeChild(output)
-            output = Output()
-            MainElement.appendChild(output)
-        })
-    }
-
-    return MainElement
+    return container
 }
 
 export default Main

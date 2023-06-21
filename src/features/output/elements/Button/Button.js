@@ -1,9 +1,10 @@
-import data from './Button.data.json'
-import createCustomizedElement from '../../../../utils/createCustomizedElement'
-import handleOutput from './handleOutput'
+import data from './button.data.json'
+import { createCustomizedElement } from '../../../../utils/DOMUtils'
 
-const Button = createCustomizedElement(data)
+const button = createCustomizedElement(data)
 
-Button.addEventListener('click', handleOutput)
+import('./handleOutput').then(({ default: handleOutput }) =>
+    button.addEventListener('click', handleOutput)
+)
 
-export default Button
+export default button

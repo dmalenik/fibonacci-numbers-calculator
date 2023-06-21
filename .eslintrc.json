@@ -17,6 +17,13 @@
             }
         ],
         "import/no-extraneous-dependencies": ["off"],
+        "import/no-unresolved": [
+            "warn",
+            {
+                "commonjs": true
+            }
+        ],
+        "import/prefer-default-export": ["off"],
         "no-console": ["off"],
         "no-param-reassign": ["warn"],
         "camelcase": ["error"],
@@ -29,7 +36,8 @@
         "prefer-const": ["error"],
         "consistent-return": ["error"],
         "max-lines": ["warn", 50],
-        "max-params": ["warn", 3]
+        "max-params": ["warn", 3],
+        "global-require": ["warn"]
     },
     "overrides": [],
     "parserOptions": {

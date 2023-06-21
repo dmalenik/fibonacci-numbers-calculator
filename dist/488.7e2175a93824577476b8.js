@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfibonacci_numbers_generator=self.webpackChunkfibonacci_numbers_generator||[]).push([[488],{488:(e,n,r)=>{r.r(n),r.d(n,{default:()=>t});const t=e=>{const n=Math.sqrt(5),r=(1+n)/2,t=(1-n)/2;return Math.round((r**e-t**e)/n)}}}]);
+//# sourceMappingURL=488.7e2175a93824577476b8.js.map

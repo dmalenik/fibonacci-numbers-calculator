@@ -1,0 +1,183 @@
+@use '../../styles/vars';
+@use '../../styles/mixins';
+
+.output {
+    border-radius: 5px;
+    background: vars.$output-background;
+    box-shadow: 3px 3px 4px 2px #517879;
+
+    .result,
+    .btn {
+        width: 100%;
+    }
+
+    .result {
+        margin: 0.75rem 0 1.5rem;
+        text-align: center;
+        @include mixins.font-settings(
+            $size: 20px,
+            $weight: 700,
+            $styles: normal,
+            $l-height: 30px,
+            $f-color: vars.$output-text-color
+        );
+        text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+        margin-bottom: 1rem;
+        border: unset;
+        background: none;
+        @include mixins.font-settings(
+            $size: 18px,
+            $weight: 700,
+            $styles: normal,
+            $l-height: 35px,
+            $f-color: vars.$output-text-color
+        );
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .output {
+        .result {
+            @include mixins.font-settings(
+                $size: 18px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+
+        .btn {
+            @include mixins.font-settings(
+                $size: 16px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .output {
+        .result {
+            @include mixins.font-settings(
+                $size: 17px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+
+        .btn {
+            @include mixins.font-settings(
+                $size: 15px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 235px) {
+    .output {
+        .result {
+            @include mixins.font-settings(
+                $size: 15px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+
+        .btn {
+            @include mixins.font-settings(
+                $size: 13px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 190px) {
+    .output {
+        .result {
+            @include mixins.font-settings(
+                $size: 14px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+
+        .btn {
+            @include mixins.font-settings(
+                $size: 12px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 185px) {
+    .output {
+        .result {
+            @include mixins.font-settings(
+                $size: 13px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+
+        .btn {
+            @include mixins.font-settings(
+                $size: 11px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+    }
+}
+
+@media screen and (max-width: 165px) {
+    .output {
+        .result {
+            @include mixins.font-settings(
+                $size: 11px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+
+        .btn {
+            @include mixins.font-settings(
+                $size: 9px,
+                $weight: 700,
+                $styles: normal,
+                $l-height: 35px,
+                $f-color: vars.$output-text-color
+            );
+        }
+    }
+}

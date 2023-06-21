@@ -1,10 +1,16 @@
-import FooterElement from './elements/FooterElement/FooterElement'
-import H2 from './elements/H2/H2'
+import { createCustomizedElement } from '../../utils/DOMUtils'
+import data from './container.data.json'
+import './Footer.styles.scss'
 
 const Footer = () => {
-    FooterElement.appendChild(H2)
+    const container = createCustomizedElement(data)
 
-    return FooterElement
+    import('./elements').then(({ link, copyright }) => {
+        container.appendChild(link)
+        container.appendChild(copyright)
+    })
+
+    return container
 }
 
 export default Footer

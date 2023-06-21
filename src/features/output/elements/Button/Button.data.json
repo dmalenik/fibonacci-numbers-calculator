@@ -2,7 +2,8 @@
     "name": "button",
     "attrs": {
         "id": "again",
+        "class": "btn",
         "type": "button"
     },
-    "children": "Try again"
+    "content": "Try again"
 }

@@ -1,0 +1,18 @@
+@mixin d-flex() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin font-settings(
+    $size: medium,
+    $weight: normal,
+    $styles: normal,
+    $f-color: #000,
+    $l-height: normal
+) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $styles;
+    color: $f-color;
+    line-height: $l-height;
+}

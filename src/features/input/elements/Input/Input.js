@@ -1,9 +1,9 @@
-import data from './Input.data.json'
-import createCustomizedElement from '../../../../utils/createCustomizedElement'
+import data from './input.data.json'
+import { createCustomizedElement } from '../../../../utils/DOMUtils'
 import setInputValue from './setInputValue'
 
-const Input = createCustomizedElement(data)
+const input = createCustomizedElement(data)
 
-Input.addEventListener('change', setInputValue)
+input.addEventListener('change', setInputValue)
 
-export default Input
+export default input
