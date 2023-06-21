@@ -1,5 +1,5 @@
 .main {
-    padding: 1.5rem;
+    padding: 1rem;
     justify-content: center;
 }
 
@@ -30,6 +30,12 @@
 @media screen and (max-width: 600px) {
     .main {
         padding: 1rem;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .main {
+        padding: 0;
     }
 }
 
