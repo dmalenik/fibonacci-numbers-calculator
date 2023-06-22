@@ -3,8 +3,6 @@
 import calcFibonacciNum from '../services/fibonacciNumService'
 
 /*
- ** The 53-bit significand precision gives from 15 to 17 significant decimal digits precision (2−53 ≈ 1.11 × 10−16)
- **
  ** Precision limitations on integer values
  **
  ** Integers from −2^53 to 2^53 (−9,007,199,254,740,992 to 9,007,199,254,740,992) can be exactly represented
@@ -21,29 +19,35 @@ import calcFibonacciNum from '../services/fibonacciNumService'
  **
  ** See Also: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
  **
- ** standard number till queueNumber is 1474, then - Infinity
+ ** Find a way to ensure the precision of results between the range of the Fibonacci number which is greater then the Maximum Safe Integer value
+ ** and the Fibonacci number which is less then the Maximum allowed number in JavaScript
  */
 
+const maxPreciseInt = Number.MAX_SAFE_INTEGER
+const maxVal = Number.MAX_VALUE
+
 describe('test calcFibonacciNum function', () => {
-    test('5th Fibonacci number is 5', () => {
+    test('5th Fibonacci number is equal to 5', () => {
         expect(calcFibonacciNum(5)).toBe(5)
     })
-    test('10th Fibonacci number is 55', () => {
-        expect(calcFibonacciNum(10)).toBe(55)
+    test('79th Fibonacci number is greater than maxSafeInt', () => {
+        expect(calcFibonacciNum(79)).toBeGreaterThanOrEqual(maxPreciseInt)
     })
-    test('60th Fibonacci number is 1548008755920', () => {
-        expect(calcFibonacciNum(60)).toBe(1548008755920)
+    test('78th Fibonacci number is less than maxSafeInt', () => {
+        expect(calcFibonacciNum(78)).toBeLessThanOrEqual(maxPreciseInt)
     })
-    test('100th Fibonacci number is 3.542248481792631e20', () => {
-        expect(calcFibonacciNum(100)).toBe(3.542248481792631e20)
+    test('78th Fibonacci number is equal to 8944394323791464', () => {
+        expect(calcFibonacciNum(78)).toBe(8944394323791464)
     })
-    test('200th Fibonacci number is 2.80571172992512e41', () => {
-        expect(calcFibonacciNum(200)).toBe(2.80571172992512e41)
+    test('1475th Fibonacci number is greater than maxVal', () => {
+        // After the queueNumber > 1474 the output is Infinity
+        // The Fibonacci number > the Maximum allowed number in JavaScript
+        expect(calcFibonacciNum(1475)).toBeGreaterThanOrEqual(maxVal)
     })
-    test('1000th Fibonacci number is 4.3466557686938915e208', () => {
-        expect(calcFibonacciNum(1000)).toBe(4.3466557686938915e208)
+    test('1474th Fibonacci number is less than maxVal', () => {
+        expect(calcFibonacciNum(1474)).toBeLessThanOrEqual(maxVal)
     })
-    test('1e5th Fibonacci number is 4.3466557686938915e208', () => {
-        expect(calcFibonacciNum(1e5)).toBe(Infinity)
+    test('1474th Fibonacci number is equal to 4.9922546054777678351e307', () => {
+        expect(calcFibonacciNum(1474)).toBe(4.9922546054777678351e307)
     })
 })
