@@ -6,7 +6,7 @@ const calcFibonacciNum = (queueNumber) => {
     const divider = 2 ** queueNumber * sqrt5
     const fibonacciNumber = (e1 - e2) / divider
 
-    return fibonacciNumber
+    return Math.floor(fibonacciNumber)
 }
 
 export default calcFibonacciNum
