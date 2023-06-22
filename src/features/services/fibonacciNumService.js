@@ -1,10 +1,10 @@
 const calcFibonacciNum = (queueNumber) => {
     // Binet formula
     const sqrt5 = Math.sqrt(5)
-    const PHI1 = (1 + sqrt5) / 2
-    const PHI2 = (1 - sqrt5) / 2
-
-    const fibonacciNumber = (PHI1 ** queueNumber - PHI2 ** queueNumber) / sqrt5
+    const e1 = (1 + sqrt5) ** queueNumber
+    const e2 = (1 - sqrt5) ** queueNumber
+    const divider = 2 ** queueNumber * sqrt5
+    const fibonacciNumber = (e1 - e2) / divider
 
     return fibonacciNumber
 }
