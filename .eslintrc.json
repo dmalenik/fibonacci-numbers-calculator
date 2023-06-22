@@ -37,7 +37,9 @@
         "consistent-return": ["error"],
         "max-lines": ["warn", 50],
         "max-params": ["warn", 3],
-        "global-require": ["warn"]
+        "global-require": ["warn"],
+        "no-loss-of-precision": ["warn"],
+        "no-undef": ["warn"]
     },
     "overrides": [],
     "parserOptions": {
