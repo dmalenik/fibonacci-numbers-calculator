@@ -11,12 +11,12 @@ module.exports = {
     plugins: devMode
         ? [
               new HtmlWebpackPlugin({
-                  title: 'Fibonacci Numbers Generator',
+                  title: 'Fibonacci Numbers Calculator',
               }),
           ]
         : [
               new HtmlWebpackPlugin({
-                  title: 'Fibonacci Numbers Generator',
+                  title: 'Fibonacci Numbers Calculator',
               }),
               new MiniCssExtractPlugin(),
           ],
