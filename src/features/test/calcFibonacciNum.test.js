@@ -21,7 +21,7 @@ import calcFibonacciNum from '../services/fibonacciNumService'
  **
  ** See Also: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
  **
- ** queueNumber till 1474
+ ** standard number till queueNumber is 1474, then - Infinity
  */
 
 describe('test calcFibonacciNum function', () => {
