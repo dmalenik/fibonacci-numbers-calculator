@@ -21,24 +21,31 @@ import calcFibonacciNum from '../services/fibonacciNumService'
  **
  ** Find a way to ensure the precision of results between the range of the Fibonacci number which is greater then the Maximum Safe Integer value
  ** and the Fibonacci number which is less then the Maximum allowed number in JavaScript
+ **
+ ** Solution
+ **
+ ** The functionality was applied to parameters of Binet formula,
+ ** then outputs of these parameters were compared to the outputs of formula's parameters before the application of BigNumber functionality
+ ** The outputs are the same
+ ** Usage of bignumber.js library did not provide expected enhancements
+ **
+ ** See Also: https://github.com/MikeMcl/bignumber.js
  */
 
 const maxPreciseInt = Number.MAX_SAFE_INTEGER
-const maxVal = Number.MAX_VALUE
 
-describe('test calcFibonacciNum function', () => {
-    test('5th Fibonacci number is equal to 5', () => {
-        expect(calcFibonacciNum(5)).toBe(5)
-    })
+describe('test the closest values to maxSafeInt', () => {
     test('79th Fibonacci number is greater than maxSafeInt', () => {
         expect(calcFibonacciNum(79)).toBeGreaterThanOrEqual(maxPreciseInt)
     })
     test('78th Fibonacci number is less than maxSafeInt', () => {
         expect(calcFibonacciNum(78)).toBeLessThanOrEqual(maxPreciseInt)
     })
-    test('78th Fibonacci number is equal to 8944394323791464', () => {
-        expect(calcFibonacciNum(78)).toBe(8944394323791464)
-    })
+})
+
+const maxVal = Number.MAX_VALUE
+
+describe('test the closest values to maxVal', () => {
     test('1475th Fibonacci number is greater than maxVal', () => {
         // After the queueNumber > 1474 the output is Infinity
         // The Fibonacci number > the Maximum allowed number in JavaScript
@@ -47,7 +54,16 @@ describe('test calcFibonacciNum function', () => {
     test('1474th Fibonacci number is less than maxVal', () => {
         expect(calcFibonacciNum(1474)).toBeLessThanOrEqual(maxVal)
     })
-    test('1474th Fibonacci number is equal to 4.9922546054777678351e307', () => {
-        expect(calcFibonacciNum(1474)).toBe(4.9922546054777678351e307)
+})
+
+describe('test calcFibonacciNum function', () => {
+    test('5th Fibonacci number is equal to 5', () => {
+        expect(calcFibonacciNum(5)).toBe(5)
+    })
+    test('78th Fibonacci number is equal to 8944394323791488', () => {
+        expect(calcFibonacciNum(78)).toBe(8944394323791488)
+    })
+    test('1474th Fibonacci number is equal to 4.992254605478015e+307', () => {
+        expect(calcFibonacciNum(1474)).toBe(4.992254605478015e307)
     })
 })
