@@ -1,3 +1,5 @@
+import Output from '../../../output/Output'
+
 const handleInput = () => {
     const source = document.querySelector('#input-number')
 
@@ -5,9 +7,7 @@ const handleInput = () => {
 
     const parent = document.querySelector('main')
 
-    import('../../../output/Output').then(({ default: Output }) =>
-        parent.replaceChildren(Output())
-    )
+    parent.replaceChildren(Output())
 }
 
 export default handleInput

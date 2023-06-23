@@ -1,13 +1,12 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './container.data.json'
+import { Provider } from '../../features'
 import './Main.styles.scss'
 
 const Main = () => {
     const container = createCustomizedElement(data)
 
-    import('../../features').then(({ Provider }) =>
-        container.appendChild(Provider())
-    )
+    container.appendChild(Provider())
 
     return container
 }

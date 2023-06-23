@@ -1,15 +1,14 @@
 import { createCustomizedElement } from './utils/DOMUtils'
 import data from './root.data.json'
+import { Header, Main, Footer } from './components'
 import './App.styles.scss'
 
 const App = () => {
     const root = createCustomizedElement(data)
 
-    import('./components').then(({ Header, Main, Footer }) => {
-        root.appendChild(Header())
-        root.appendChild(Main())
-        root.appendChild(Footer())
-    })
+    root.appendChild(Header())
+    root.appendChild(Main())
+    root.appendChild(Footer())
 
     return root
 }
