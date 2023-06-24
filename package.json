@@ -9,7 +9,8 @@
         "lint": "npx eslint ./src",
         "check": "npx prettier --check ./src",
         "format": "npx prettier --write ./src",
-        "build": "webpack --config webpack.prod.js"
+        "build": "webpack --config webpack.prod.js",
+        "babel": "npx babel src --out-dir lib"
     },
     "repository": {
         "type": "git",
@@ -29,10 +30,13 @@
     "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator#readme",
     "devDependencies": {
         "@babel/core": "^7.21.8",
+        "@babel/plugin-transform-json-strings": "^7.22.5",
         "@babel/preset-env": "^7.20.2",
         "autoprefixer": "^10.4.14",
         "babel-cli": "^6.26.0",
         "babel-jest": "^29.4.1",
+        "babel-plugin-transform-scss": "^1.0.8",
+        "core-js": "^3.31.0",
         "css-loader": "^6.7.3",
         "eslint": "^8.31.0",
         "eslint-config-airbnb-base": "^15.0.0",
@@ -53,8 +57,5 @@
         "webpack-dev-server": "^4.15.0",
         "webpack-merge": "^5.8.0"
     },
-    "dependencies": {},
-    "browserslist": [
-        "defaults and supports es6-module"
-    ]
+    "dependencies": {}
 }
