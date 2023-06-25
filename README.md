@@ -30,7 +30,9 @@ The file structure of the Fibonacci Numbers Calculator is organized as follows:
 -   **_dist/_**: The folder containing the distributed code of the Fibonacci Numbers Calculator. This folder typically contains minified and optimized versions of the source code for deployment.
 -   **_lib/_**: The folder containing the polyfilled code of the Fibonacci Numbers Calculator. This folder may include additional dependencies or polyfills to ensure compatibility with older browsers or environments.
 
-The src folder of the Fibonacci Numbers Calculator contains the following files and folders:
+### The src/ Folder
+
+The **_src_** folder of the Fibonacci Numbers Calculator contains the following files and folders:
 
 ![src Structure](./src/assets/images/image-1.png)
 
@@ -47,7 +49,7 @@ If you encounter any issues while using the Fibonacci Numbers Calculator, try th
 
 -   Ensure that you have entered a valid number in the input field.
 -   Check for any error messages displayed on the console of your web browser's developer tools.
--   Verify that all the necessary dependencies are installed by running npm install in the project directory.
+-   Verify that all the necessary dependencies are installed by running `npm install`  in the project directory.
 
 ## License
 
