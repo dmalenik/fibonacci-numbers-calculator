@@ -24,7 +24,7 @@ To use the Fibonacci Numbers Calculator, follow these steps:
 
 The file structure of the Fibonacci Numbers Calculator is organized as follows:
 
-![File Structure](image.png)
+![File Structure](./src/assets/images/image.png)
 
 -   **_src/_**: The folder containing the source code of the Fibonacci Numbers Calculator.
 -   **_dist/_**: The folder containing the distributed code of the Fibonacci Numbers Calculator. This folder typically contains minified and optimized versions of the source code for deployment.
@@ -32,7 +32,7 @@ The file structure of the Fibonacci Numbers Calculator is organized as follows:
 
 The src folder of the Fibonacci Numbers Calculator contains the following files and folders:
 
-![src Structure](image-1.png)
+![src Structure](./src/assets/images/image-1.png)
 
 -   **_index.js_**: This file serves as the entry point for the application.
 -   **_App.js_**: The App.js file houses the main component of the application. It is responsible for managing the overall structure and behavior of the app.
