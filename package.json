@@ -12,7 +12,7 @@
         "babel": "npx babel src --out-dir lib",
         "build": "webpack --config webpack.prod.js",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d ./dist"
+        "deploy": "gh-pages -d dist"
     },
     "repository": {
         "type": "git",
@@ -29,7 +29,7 @@
     "bugs": {
         "url": "https://github.com/dmalenik/fibonacci-numbers-generator/issues"
     },
-    "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator/dist",
+    "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator/",
     "devDependencies": {
         "@babel/core": "^7.21.8",
         "@babel/plugin-transform-json-strings": "^7.22.5",
