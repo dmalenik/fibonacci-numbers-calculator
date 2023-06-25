@@ -10,9 +10,7 @@
         "prettier:check": "npx prettier --check ./src",
         "prettier:write": "npx prettier --write ./src",
         "babel": "npx babel src --out-dir lib",
-        "build": "webpack --config webpack.prod.js",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "build": "webpack --config webpack.prod.js"
     },
     "repository": {
         "type": "git",
@@ -44,7 +42,6 @@
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.6.0",
         "eslint-plugin-import": "^2.26.0",
-        "gh-pages": "^5.0.0",
         "html-webpack-plugin": "^5.5.1",
         "jest": "^25.5.4",
         "mini-css-extract-plugin": "^2.7.6",
