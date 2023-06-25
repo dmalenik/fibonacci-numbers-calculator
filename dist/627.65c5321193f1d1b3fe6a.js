@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfibonacci_numbers_generator=self.webpackChunkfibonacci_numbers_generator||[]).push([[627],{627:(t,n,e)=>{e.r(n),e.d(n,{button:()=>c,result:()=>u});const a=JSON.parse('{"name":"button","attrs":{"id":"again","class":"btn","type":"button"},"content":"Try again"}');var s=e(427);const r=(0,s.K)(a);e.e(728).then(e.bind(e,728)).then((({default:t})=>r.addEventListener("click",t)));const c=r,o=JSON.parse('{"name":"p","attrs":{"class":"result"},"content":""}'),u=(0,s.K)(o)}}]);
-//# sourceMappingURL=627.65c5321193f1d1b3fe6a.js.map

@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfibonacci_numbers_generator=self.webpackChunkfibonacci_numbers_generator||[]).push([[872],{872:(e,s,t)=>{t.r(s),t.d(s,{default:()=>n});const n=(e,s)=>{sessionStorage.getItem(e)&&sessionStorage.removeItem(e),sessionStorage.setItem(e,s)}}}]);
-//# sourceMappingURL=872.5b5c1d12d81096c9bbda.js.map
