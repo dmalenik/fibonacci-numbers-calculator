@@ -7,8 +7,8 @@
         "start": "webpack serve --open --config webpack.dev.js",
         "test": "jest",
         "lint": "npx eslint ./src",
-        "check": "npx prettier --check ./src",
-        "format": "npx prettier --write ./src",
+        "prettier:check": "npx prettier --check ./src",
+        "prettier:write": "npx prettier --write ./src",
         "build": "webpack --config webpack.prod.js",
         "babel": "npx babel src --out-dir lib"
     },
