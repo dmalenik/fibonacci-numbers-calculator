@@ -22,7 +22,7 @@
         "generator",
         "calculator"
     ],
-    "author": "Dmytro Malenik",
+    "author": "Dmitriy Malenik",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/dmalenik/fibonacci-numbers-generator/issues"
