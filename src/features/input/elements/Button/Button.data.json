@@ -5,6 +5,5 @@
         "class": "btn",
         "type": "button",
         "form": "fibonacci-form"
-    },
-    "content": "Send"
+    }
 }

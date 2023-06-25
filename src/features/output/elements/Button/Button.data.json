@@ -4,6 +4,5 @@
         "id": "again",
         "class": "btn",
         "type": "button"
-    },
-    "content": "Try again"
+    }
 }

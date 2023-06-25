@@ -2,6 +2,5 @@
     "name": "footer",
     "attrs": {
         "class": "component footer"
-    },
-    "content": ""
+    }
 }

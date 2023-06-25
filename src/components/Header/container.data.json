@@ -2,6 +2,5 @@
     "name": "header",
     "attrs": {
         "class": "component header"
-    },
-    "content": ""
+    }
 }

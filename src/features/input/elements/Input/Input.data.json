@@ -6,6 +6,5 @@
         "type": "number",
         "name": "input-number",
         "min": 0
-    },
-    "content": ""
+    }
 }
