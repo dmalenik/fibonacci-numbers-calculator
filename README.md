@@ -24,7 +24,7 @@ To use the Fibonacci Numbers Calculator, follow these steps:
 
 The file structure of the Fibonacci Numbers Calculator is organized as follows:
 
-![File Structure](./src/assets/images/image.png)
+![File Structure](./src/assets/images/image-1.png)
 
 -   **_src/_**: The folder containing the source code of the Fibonacci Numbers Calculator.
 -   **_dist/_**: The folder containing the distributed code of the Fibonacci Numbers Calculator. This folder typically contains minified and optimized versions of the source code for deployment.
@@ -34,10 +34,11 @@ The file structure of the Fibonacci Numbers Calculator is organized as follows:
 
 The **_src_** folder of the Fibonacci Numbers Calculator contains the following files and folders:
 
-![src Structure](./src/assets/images/image-1.png)
+![src Structure](./src/assets/images/image.png)
 
 -   **_index.js_**: This file serves as the entry point for the application.
 -   **_App.js_**: The App.js file houses the main component of the application. It is responsible for managing the overall structure and behavior of the app.
+-   **_assets folder_**: This folder contains various assets used globally within the application
 -   **_components folder_**: This folder contains various components that make up the views and user interface of the app. Each component represents a specific part of the App view and contributes to the functionality of the application.
 -   **_features folder_**: Within this folder, you will find additional files that represent specific features of the Fibonacci Numbers Calculator. These files implement functionalities such as input handling, calculation logic, and displaying the Fibonacci number.
 -   **_styles folder_**: This folder contains additional CSS or styling files that customize the visual appearance of the application. It includes styles specific to the Fibonacci Numbers Calculator.
@@ -49,7 +50,7 @@ If you encounter any issues while using the Fibonacci Numbers Calculator, try th
 
 -   Ensure that you have entered a valid number in the input field.
 -   Check for any error messages displayed on the console of your web browser's developer tools.
--   Verify that all the necessary dependencies are installed by running `npm install`  in the project directory.
+-   Verify that all the necessary dependencies are installed by running `npm install` in the project directory.
 
 ## License
 
