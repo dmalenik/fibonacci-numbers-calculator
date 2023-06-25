@@ -27,7 +27,7 @@
     "bugs": {
         "url": "https://github.com/dmalenik/fibonacci-numbers-generator/issues"
     },
-    "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator#readme",
+    "homepage": "https://github.com/dmalenik/fibonacci-numbers-generator",
     "devDependencies": {
         "@babel/core": "^7.21.8",
         "@babel/plugin-transform-json-strings": "^7.22.5",
