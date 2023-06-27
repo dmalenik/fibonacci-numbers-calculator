@@ -3,7 +3,7 @@
     "attrs": [
         {
             "key": "for",
-            "value": "fibonacci-number"
+            "value": "input-number"
         },
         {
             "key": "class",

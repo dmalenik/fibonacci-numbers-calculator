@@ -20,6 +20,10 @@
         {
             "key": "min",
             "value": 0
+        },
+        {
+            "key": "aria-label",
+            "value": "Sequence number field"
         }
     ]
 }

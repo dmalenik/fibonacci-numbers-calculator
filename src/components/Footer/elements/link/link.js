@@ -3,9 +3,11 @@ import { createCustomizedElement } from '../../../../utils/DOMUtils'
 import icon from './github.svg'
 
 const link = createCustomizedElement(data)
+
 const githubIcon = new Image()
 
-githubIcon.src = icon
+githubIcon.setAttribute('src', icon)
+githubIcon.setAttribute('alt', 'GitHub Icon')
 
 link.appendChild(githubIcon)
 

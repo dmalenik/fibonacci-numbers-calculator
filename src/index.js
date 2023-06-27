@@ -2,6 +2,8 @@ import App from './App'
 import './normalize.scss'
 import './index.scss'
 
+// Accessibility issues
+document.querySelector('html').setAttribute('lang', 'en-US')
 let app = App()
 document.body.appendChild(app)
 
