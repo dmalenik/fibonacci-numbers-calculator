@@ -1,5 +1,5 @@
 import { createCustomizedElement } from './utils/DOMUtils'
-import data from './root.data.json'
+import data from './App.data.json'
 import { Header, Main, Footer } from './components'
 import './App.styles.scss'
 
