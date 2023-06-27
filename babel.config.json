@@ -1,9 +1,5 @@
 {
     "presets": [
         ["@babel/preset-env", { "useBuiltIns": "entry", "corejs": "3.31" }]
-    ],
-    "plugins": [
-        "@babel/plugin-transform-json-strings",
-        "babel-plugin-transform-scss"
     ]
 }
