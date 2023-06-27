@@ -1,5 +1,5 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
-import data from './container.data.json'
+import data from './Footer.data.json'
 import { link, copyright } from './elements'
 import './Footer.styles.scss'
 

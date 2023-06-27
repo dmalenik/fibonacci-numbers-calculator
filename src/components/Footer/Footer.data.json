@@ -1,9 +1,9 @@
 {
-    "name": "p",
+    "name": "footer",
     "attrs": [
         {
             "key": "class",
-            "value": "copyright"
+            "value": "component footer"
         }
     ]
 }

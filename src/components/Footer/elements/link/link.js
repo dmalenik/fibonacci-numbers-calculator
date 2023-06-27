@@ -1,11 +1,11 @@
 import data from './link.data.json'
 import { createCustomizedElement } from '../../../../utils/DOMUtils'
-import Icon from './github.svg'
+import icon from './github.svg'
 
 const link = createCustomizedElement(data)
 const githubIcon = new Image()
 
-githubIcon.src = Icon
+githubIcon.src = icon
 
 link.appendChild(githubIcon)
 
