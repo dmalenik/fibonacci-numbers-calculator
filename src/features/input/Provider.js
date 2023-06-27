@@ -1,14 +1,15 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './Provider.data.json'
-import { label, input, button } from './elements'
 import './Provider.styles.scss'
 
 const Provider = () => {
     const form = createCustomizedElement(data)
 
-    form.appendChild(label)
-    form.appendChild(input)
-    form.appendChild(button)
+    import('./elements').then(({ label, input, button }) => {
+        form.appendChild(label)
+        form.appendChild(input)
+        form.appendChild(button)
+    })
 
     return form
 }

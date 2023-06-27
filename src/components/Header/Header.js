@@ -1,12 +1,13 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
 import data from './Header.data.json'
-import { h1 } from './elements'
 import './Header.styles.scss'
 
 const Header = () => {
     const container = createCustomizedElement(data)
 
-    container.appendChild(h1)
+    import('./elements').then(({ h1 }) => {
+        container.appendChild(h1)
+    })
 
     return container
 }
