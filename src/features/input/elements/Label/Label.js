@@ -1,9 +1,9 @@
 import data from './label.data.json'
 import { createCustomizedElement } from '../../../../utils/DOMUtils'
-import Text from './text.json'
+import text from './label.text.json'
 
 const label = createCustomizedElement(data)
 
-label.innerText = Text
+label.innerText = text
 
 export default label

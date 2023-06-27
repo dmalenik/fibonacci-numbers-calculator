@@ -1,5 +1,5 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
-import data from './form.data.json'
+import data from './Provider.data.json'
 import { label, input, button } from './elements'
 import './Provider.styles.scss'
 
