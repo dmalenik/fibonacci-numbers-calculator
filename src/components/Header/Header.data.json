@@ -1,0 +1,9 @@
+{
+    "name": "header",
+    "attrs": [
+        {
+            "key": "class",
+            "value": "component header"
+        }
+    ]
+}

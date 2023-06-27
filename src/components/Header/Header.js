@@ -1,5 +1,5 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
-import data from './container.data.json'
+import data from './Header.data.json'
 import { h1 } from './elements'
 import './Header.styles.scss'
 
