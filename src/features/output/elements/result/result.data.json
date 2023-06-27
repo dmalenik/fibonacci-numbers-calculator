@@ -1,6 +1,9 @@
 {
     "name": "p",
-    "attrs": {
-        "class": "result"
-    }
+    "attrs": [
+        {
+            "key": "class",
+            "value": "result"
+        }
+    ]
 }

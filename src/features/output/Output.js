@@ -1,5 +1,5 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
-import data from './section.data.json'
+import data from './Output.data.json'
 import calcFibonacciNum from '../services/fibonacciNumService'
 import updateItemToSessionStorage from '../utils/sessionStorageUtils'
 import { result, button } from './elements'

@@ -1,0 +1,13 @@
+{
+    "name": "section",
+    "attrs": [
+        {
+            "key": "id",
+            "value": "output"
+        },
+        {
+            "key": "class",
+            "value": "features output"
+        }
+    ]
+}
