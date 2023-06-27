@@ -1,9 +1,21 @@
 {
     "name": "button",
-    "attrs": {
-        "id": "fibonacci-button",
-        "class": "btn",
-        "type": "button",
-        "form": "fibonacci-form"
-    }
+    "attrs": [
+        {
+            "key": "id",
+            "value": "fibonacci-button"
+        },
+        {
+            "key": "class",
+            "value": "btn"
+        },
+        {
+            "key": "type",
+            "value": "button"
+        },
+        {
+            "key": "form",
+            "value": "fibonacci-form"
+        }
+    ]
 }

@@ -1,7 +1,13 @@
 {
     "name": "label",
-    "attrs": {
-        "for": "fibonacci-number",
-        "class": "label"
-    }
+    "attrs": [
+        {
+            "key": "for",
+            "value": "fibonacci-number"
+        },
+        {
+            "key": "class",
+            "value": "label"
+        }
+    ]
 }

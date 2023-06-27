@@ -1,9 +1,21 @@
 {
     "name": "form",
-    "attrs": {
-        "id": "fibonacci-form",
-        "class": "features provider",
-        "method": "",
-        "action": ""
-    }
+    "attrs": [
+        {
+            "key": "id",
+            "value": "fibonacci-form"
+        },
+        {
+            "key": "class",
+            "value": "features provider"
+        },
+        {
+            "key": "method",
+            "value": ""
+        },
+        {
+            "key": "action",
+            "value": ""
+        }
+    ]
 }
