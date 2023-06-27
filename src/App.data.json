@@ -1,7 +1,10 @@
 {
     "name": "div",
-    "attrs": {
-        "class": "root"
-    },
-    "content": ""
+    "attrs": [
+        {
+            "key": "class",
+            "value": "root"
+        }
+    ],
+    "children": []
 }
