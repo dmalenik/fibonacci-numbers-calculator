@@ -1,0 +1,9 @@
+{
+    "name": "main",
+    "attrs": [
+        {
+            "key": "class",
+            "value": "component main"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 import { createCustomizedElement } from '../../utils/DOMUtils'
-import data from './container.data.json'
+import data from './Main.data.json'
 import { Provider } from '../../features'
 import './Main.styles.scss'
 
