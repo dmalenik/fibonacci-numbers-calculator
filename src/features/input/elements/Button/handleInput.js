@@ -1,9 +1,10 @@
 import Output from '../../../output/Output'
+import { settleItem } from '../../../api/sessionStorage'
 
 const handleInput = () => {
     const source = document.querySelector('#input-number')
 
-    sessionStorage.setItem('sequenceNumber', source.getAttribute('value'))
+    settleItem('sequenceNumber', source.getAttribute('value'))
 
     const parent = document.querySelector('main')
 
